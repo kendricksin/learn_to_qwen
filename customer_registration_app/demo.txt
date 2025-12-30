@@ -1,0 +1,29 @@
+# Demo script showing how to use the Customer Registration Application
+
+print("Customer Registration Application - Demo")
+print("=" * 50)
+
+print("\nThis application allows you to:")
+print("1. Add new customers to the database")
+print("2. View all registered customers")
+print("3. Search for specific customers")
+print("4. Quit the application")
+
+print("\nTo use the application:")
+print("- Run 'python3 customer_app.py'")
+print("- At the prompt, enter one of these commands:")
+print("  - 'add' to add a new customer")
+print("  - 'view' to see all customers")
+print("  - 'search' to find a specific customer")
+print("  - 'help' to see available commands")
+print("  - 'quit' to exit the application")
+
+print("\nExample workflow:")
+print("1. Run the application: python3 customer_app.py")
+print("2. Type 'add' and follow prompts to add a customer")
+print("3. Type 'view' to see all customers")
+print("4. Type 'search' and enter a name to find a customer")
+print("5. Type 'quit' when finished")
+
+print("\nThe application automatically creates a 'customers.db' file")
+print("to store customer information using SQLite database.")
