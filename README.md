@@ -124,12 +124,9 @@ You now have a clean workspace! Everything you build will live here.
 <img width="744" height="400" alt="image" src="https://github.com/user-attachments/assets/6d959832-2588-4a33-bc9a-414927eb3afa" />
 
 ### Using Qwen Code (via https://chat.qwen.ai/):
-1. Highlight a piece of code or place your cursor where you want help
-2. Press `Ctrl + L` (or right-click → “Ask Qwen”)
-3. Type a prompt like:
-   - “Explain this code”
-   - “How do I read a file in Python?”
-   - “Fix this error: …”
+1. Prepare your prompt or problem you have faced (90% of the work)
+2. Copy and paste it into the chatbot
+3. Read the response and follow the steps
 
 ---
 
