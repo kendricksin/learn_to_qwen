@@ -2,13 +2,31 @@
 *A beginner-friendly guide, with minimal setup to start coding with AI assistance*
 
 > **What is "vibe coding"?**  
-> It’s a relaxed, iterative way of building software with the help of AI. Instead of writing everything yourself, you *collaborate* with an AI like Qwen Code to brainstorm, draft, debug, and refine your code—while you stay in control!
 
-This tutorial walks you through the full beginner workflow using tools like **VS Code**, **Qwen Code**, **Python**, **npm**, and **Git**. You’ll go from zero to sharing your first AI-assisted project on GitHub!
+> *Vibe coding is a hilarious slang for using generative AI for software projects "This programmer is making software with nothing but vibes!". While there are lots of criticism about this approach, from an engineering perspective it has solved a significant bottleneck of software development - the learning curve.*
+
+> *For myself, a practical and measured take on vibe coding is to treat it as if learning from a patient and kind software expert, applying what you learn, and solving real world problems all-in-one all in real-time.*
+
+> *Code is a means to an end, real engineering comes from learning and applying - these fundementals are timeless and would apply with or without generative AI. This tutorial is less about generative AI, and much more about setting up a learning workflow.*
+
+
+This tutorial walks you through the full beginner workflow using tools like **VS Code**, **Qwen Code**, **Python**, **npm**, and **Git**. You'll go from zero to sharing your first AI-assisted project on GitHub!
 
 ---
 
-## 🛠️ Tools You’ll Use (and Why)
+## 📋 Table of Contents
+- [🛠️ Tools You'll Use (and Why)](#️-tools-youll-use-and-why)
+- [✅ Step 1: Download and Install the Tools](#-step-1-download-and-install-the-tools)
+- [📁 Step 1a: Set Up Your Working Folder](#-step-1a-set-up-your-working-folder)
+- [👀 Step 1b (Optional): Get Comfortable with VS Code & Qwen Code](#-step-1b-optional-get-comfortable-with-vs-code--qwen-code)
+- [🎯 Step 2: Plan Your Project ("Architecting & Engineering")](#-step-2-plan-your-project-architecting--engineering)
+- [🔄 Step 3: The "Prompt → Test → Commit" Cycle](#-step-3-the-prompt--test--commit-cycle)
+- [🌐 Share Your Work on GitHub](#-share-your-work-on-github)
+- [🧘 Final Tips for Vibe Coding Success](#-final-tips-for-vibe-coding-success)
+
+---
+
+## 🛠️ Tools You'll Use (and Why)
 
 <div align="center">
   
@@ -48,7 +66,6 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 - ✅ **Important**: Check “Add Python to PATH” during install!
 - Python is a intepreter for the coding language, we dont have to "start a program"
 
-
 <img width="950" height="390" alt="image" src="https://github.com/user-attachments/assets/a96290e7-58a1-4f70-9cd4-705eac5dc656" />
 
 
@@ -57,6 +74,7 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 - Download the **LTS** version (recommended for beginners)
 - Run the installer
 - Node.js is a runtime environment, and JIT compiler, we also do not technically run any exe file.
+
 <img width="1142" height="400" alt="image" src="https://github.com/user-attachments/assets/83f2b96f-d1e4-4648-b8df-a8842ff9325d" />
 
 
@@ -67,6 +85,7 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 > git --version
 > ```
 > If these return version numbers, you’re good!
+
 <img width="335" height="107" alt="image" src="https://github.com/user-attachments/assets/0109865d-2f8d-49f1-9ee0-3d1b92303208" />
 
 
@@ -75,6 +94,7 @@ This tutorial walks you through the full beginner workflow using tools like **VS
   - You can copy-paste code between browser and VS Code
 - Option B: Use **Qwen Code** (official Qwen Code extension)
   - Visit the official Qwen Code github repo for more details https://github.com/QwenLM/qwen-code
+
 <img width="978" height="400" alt="image" src="https://github.com/user-attachments/assets/bca83e70-fb7f-4c9a-8ee4-6b8f84064520" />
 
 ---
@@ -100,6 +120,7 @@ You now have a clean workspace! Everything you build will live here.
 - **Editor** (center): Where you write code
 - **Terminal** (bottom): Type commands like `python your_script.py`
   - Open it with `Ctrl + `` ` (backtick) or `View → Terminal`
+
 <img width="744" height="400" alt="image" src="https://github.com/user-attachments/assets/6d959832-2588-4a33-bc9a-414927eb3afa" />
 
 ### Using Qwen Code (via https://chat.qwen.ai/):
@@ -204,5 +225,4 @@ git commit -m "I added a new button"
 
 ---
 
-> *Vibe coding is 50% Learning 40% Engineering Work 10% **Collaborating with AI** to build cool things. Congratulations on being part of shaping the future of software engineering!* 🚀
 > *Vibe coding is 50% Learning 40% Engineering Work 10% **Collaborating with AI** to build cool things. Congratulations on being part of shaping the future of software engineering!* 🚀
