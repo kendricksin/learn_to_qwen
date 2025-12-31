@@ -31,8 +31,8 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 
 ## ✅ Step 1: Download and Install the Tools
 
-### 1. Install **VS Code**
-- Go to [https://code.visualstudio.com/](https://code.visualstudio.com/)
+### 1. Install **VS Code** (or any IDE)
+- Go to [VS Code Homepage](https://code.visualstudio.com/)
 - Download for your OS (Windows, Mac, or Linux)
 - Run the installer (keep defaults)
 - Start VS Code (this is our core tool)
@@ -41,7 +41,7 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 
 
 ### 2. Install **Python**
-- Go to [https://www.python.org/downloads/](https://www.python.org/downloads/)
+- Go to [Python Homepage](https://www.python.org/downloads/)
 - Download the latest version
 - ✅ **Important**: Check “Add Python to PATH” during install!
 - Python is a intepreter for the coding language, we dont have to "start a program"
@@ -49,7 +49,7 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 
 
 ### 3. Install **Node.js** (includes **npm**)
-- Go to [https://nodejs.org/](https://nodejs.org/)
+- Go to [Node.js Homepage](https://nodejs.org/)
 - Download the **LTS** version (recommended for beginners)
 - Run the installer
 - Node.js is a runtime environment, and JIT compiler, we also do not technically run any exe file.
@@ -64,7 +64,7 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 > If these return version numbers, you’re good!
 
 ### 4 (Optional). Get **Qwen Code**
-- Option A: Use Qwen via web at [chat.qwen.ai](chat.qwen.ai)
+- Option A: Use Qwen via web at [Qwen Chat](chat.qwen.ai)
   - You can copy-paste code between browser and VS Code
 - Option B: Use **Qwen Code** (official Qwen Code extension)
   - Visit the official Qwen Code github repo for more details https://github.com/QwenLM/qwen-code
@@ -76,10 +76,13 @@ npm install -g @qwen-code/qwen-code@latest
 
 ## 📁 Step 1a: Set Up Your Working Folder
 
-1. Open **File Explorer** (Windows) or **Finder** (Mac)
+1. Open **File Explorer** ([Windows](https://support.microsoft.com/en-us/windows/file-explorer-in-windows-ef370130-1cca-9dc5-e0df-2f7416fe1cb1)) or **Finder** ([Mac](https://support.apple.com/en-sg/guide/mac-help/mchlp2605/mac))
 2. Go to your **Documents** folder
 3. Create a new folder called `my-first-ai-project`
 4. In VS Code: `File → Open Folder` → Select this folder
+
+<img width="539" height="496" alt="image" src="https://github.com/user-attachments/assets/d303df3b-5ea9-45dc-9ed9-9e5d2897dee2" />
+
 
 You now have a clean workspace! Everything you build will live here.
 
@@ -100,8 +103,6 @@ You now have a clean workspace! Everything you build will live here.
    - “Explain this code”
    - “How do I read a file in Python?”
    - “Fix this error: …”
-
-> 💡 **Tip**: Treat Qwen like a senior dev teammate—be clear, specific, and polite!
 
 ---
 
@@ -126,6 +127,7 @@ Before writing code, ask yourself:
 - No external libraries needed (keep it beginner-friendly)
 - Git for version control
 
+> 💡 **AI Tip**: Treat Qwen like a senior dev teammate—be clear, specific, and polite!
 > 🧠 **AI Tip**: Ask AI what are the technologies availabe to choose and weigh the pros and cons
 
 ### 📚 Sample Projects to Try
