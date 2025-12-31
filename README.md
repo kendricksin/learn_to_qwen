@@ -35,12 +35,16 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 - Go to [https://code.visualstudio.com/](https://code.visualstudio.com/)
 - Download for your OS (Windows, Mac, or Linux)
 - Run the installer (keep defaults)
+- Start VS Code (this is our core tool)
 <img width="747" height="400" alt="image" src="https://github.com/user-attachments/assets/67ba2e09-dea2-4d76-91a8-9be96a22f191" />
+<img width="742" height="400" alt="image" src="https://github.com/user-attachments/assets/15083683-5a6d-449b-9786-3df1c1472e86" />
+
 
 ### 2. Install **Python**
 - Go to [https://www.python.org/downloads/](https://www.python.org/downloads/)
 - Download the latest version
 - ✅ **Important**: Check “Add Python to PATH” during install!
+- Python is a intepreter for the coding language, we dont have to "start a program"
 <img width="950" height="390" alt="image" src="https://github.com/user-attachments/assets/a96290e7-58a1-4f70-9cd4-705eac5dc656" />
 
 
@@ -48,9 +52,10 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 - Go to [https://nodejs.org/](https://nodejs.org/)
 - Download the **LTS** version (recommended for beginners)
 - Run the installer
+- Node.js is a runtime environment, and JIT compiler, we also do not technically run any exe file.
 <img width="745" height="400" alt="image" src="https://github.com/user-attachments/assets/bd213ed9-70e0-4b9c-ba21-e5ca1d5d3e70" />
 
-> After installing, open your terminal (Command Prompt on Windows, Terminal on Mac/Linux) and check:
+> After installing, open VSC Terminal (Bash) and type the following:
 > ```bash
 > python --version
 > npm --version
@@ -59,10 +64,13 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 > If these return version numbers, you’re good!
 
 ### 4 (Optional). Get **Qwen Code**
-- Option A: Use **Tongyi Lingma** (official Qwen Code extension)
-  - In VS Code: Go to Extensions → Search “Tongyi Lingma” → Install
-- Option B: Use Qwen via web at [chat.qwen.ai](chat.qwen.ai)
+- Option A: Use Qwen via web at [chat.qwen.ai](chat.qwen.ai)
   - You can copy-paste code between browser and VS Code
+- Option B: Use **Qwen Code** (official Qwen Code extension)
+  - Visit the official Qwen Code github repo for more details https://github.com/QwenLM/qwen-code
+```bash
+npm install -g @qwen-code/qwen-code@latest
+```
 
 ---
 
