@@ -63,4 +63,4 @@ Sample plan.md in reference answers
 3. Iterate on the conversation to refine your approach, copy and paste any errors you find.
 4. Use the AI's suggestions to build your batch emailer
 
-> **Step 2 Reference:** <img width="665" height="400" alt="image" src="https://github.com/user-attachments/assets/c44bf15d-6231-4b90-a323-4f4eaa9bfa30" />
+> **Reference Answer and Steps:** [COMPLETED_PLAN.md See below for pictures](./reference_answer/COMPLETED_PLAN.md)
