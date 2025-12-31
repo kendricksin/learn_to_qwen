@@ -95,6 +95,7 @@ You now have a clean workspace! Everything you build will live here.
 - **Editor** (center): Where you write code
 - **Terminal** (bottom): Type commands like `python your_script.py`
   - Open it with `Ctrl + `` ` (backtick) or `View → Terminal`
+<img width="744" height="400" alt="image" src="https://github.com/user-attachments/assets/6d959832-2588-4a33-bc9a-414927eb3afa" />
 
 ### Using Qwen Code (via https://chat.qwen.ai/):
 1. Highlight a piece of code or place your cursor where you want help
