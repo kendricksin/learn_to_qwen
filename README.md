@@ -75,6 +75,7 @@ This tutorial walks you through the full beginner workflow using tools like **VS
   - You can copy-paste code between browser and VS Code
 - Option B: Use **Qwen Code** (official Qwen Code extension)
   - Visit the official Qwen Code github repo for more details https://github.com/QwenLM/qwen-code
+<img width="978" height="400" alt="image" src="https://github.com/user-attachments/assets/bca83e70-fb7f-4c9a-8ee4-6b8f84064520" />
 
 ---
 
