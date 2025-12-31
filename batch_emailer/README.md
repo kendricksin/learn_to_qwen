@@ -1,112 +1,62 @@
-# Batch Emailer Project
+# Batch Emailer Project - AI Prompting Guide
 
-This project demonstrates how to send batch emails using Python's SMTP protocol with HTML templates and environment variable security.
+Learn how to effectively prompt AI to help you build a batch emailer using Python's SMTP protocol with HTML templates and environment variable security.
 
-## What You'll Learn
+## The 3-Question Approach for AI Prompting
 
-- SMTP protocols and email sending
-- HTML email templates
-- Environment variable security for passwords
-- Python's smtplib and email modules
+1. **What are you trying to build?** - *In this project we will build a emailer to send to a mail list.*
+2. **What does 'done' look like?** - *In a emailer project success means after we run the script, it would send emails to our mail list.*
+3. **What technology will you use?** - *For a beginner, we may not know, so we can ask AI to suggest us, but we have a baseline ready with VSC and python.*
 
-## How to Create This Project
+## Creating Your plan.md File
 
-### 1. Set up your project structure
+Create a `plan.md` file with the following template and paste it into your AI prompt:
+
 ```
-batch_emailer/
-├── send_emails.py
-├── email_template.html
-├── recipients.csv
-└── .env
-```
+## Project Overview:
+I want to build a batch emailer that sends personalized template emails to multiple recipients.
 
-### 2. Install required packages
-```bash
-pip install python-dotenv
-```
+## 1. What are you trying to build?
+[Your specific requirements here]
 
-### 3. Create your environment file (.env)
-```
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_app_password
-```
+## 2. What does done look like?
+[Your success criteria here]
 
-### 4. Create an HTML email template (email_template.html)
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Newsletter</title>
-</head>
-<body>
-    <h1>Hello {name}!</h1>
-    <p>This is a personalized message for {name}.</p>
-</body>
-</html>
+## 3. What technologies will you use?
+[Your technology stack here]
+
+## Additional Requirements
+- Security: Use environment variables for email credentials
+- Personalization: Include recipient names in emails, and custom email template
+- File structure: Organize code in a clean project structure
+
+## Specific Questions
+- What Python libraries do you recommend for this project?
+- How should I structure the project files?
+- What's the best way to handle email templates?
+- How can I ensure email credentials are secure?
 ```
 
-### 5. Write the Python script (send_emails.py)
-```python
-import smtplib
-import csv
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from dotenv import load_dotenv
-import os
+## Tips for Better AI Responses
 
-load_dotenv()
+- Be specific about your requirements and constraints
+- Mention any libraries or frameworks you want to use
+- Include error handling and security requirements
+- Ask for code examples and best practices
+- Request explanations for complex concepts
+- Clarify any parts of the response you don't understand
 
-def send_batch_emails():
-    # Get email credentials from environment variables
-    email_user = os.getenv('EMAIL_USER')
-    email_pass = os.getenv('EMAIL_PASS')
-    
-    # Connect to server
-    server = smtplib.SMTP('smtp.gmail.com', 587)
-    server.starttls()
-    server.login(email_user, email_pass)
-    
-    # Read recipients from CSV
-    with open('recipients.csv', newline='') as csvfile:
-        reader = csv.DictReader(csvfile)
-        for row in reader:
-            msg = MIMEMultipart()
-            msg['Subject'] = 'Your Subject Here'
-            msg['From'] = email_user
-            msg['To'] = row['email']
-            
-            # Read HTML template and personalize
-            with open('email_template.html', 'r') as template_file:
-                html_content = template_file.read()
-                html_content = html_content.replace('{name}', row['name'])
-            
-            msg.attach(MIMEText(html_content, 'html'))
-            
-            # Send email
-            server.send_message(msg)
-            print(f"Email sent to {row['name']} at {row['email']}")
-    
-    server.quit()
+## Sample Prompts to Try
 
-if __name__ == "__main__":
-    send_batch_emails()
-```
+1. "How can i structure my folder for this project?"
 
-### 6. Create a recipients CSV file (recipients.csv)
-```
-name,email
-John,john@example.com
-Jane,jane@example.com
-```
+2. "What alternatives do I have to python script?"
 
-### 7. Run the script
-```bash
-python send_emails.py
-```
+3. "How can i make interactive design templates for my email?"
 
-## Security Best Practices
+## Next Steps
 
-- Never hardcode passwords in your source code
-- Use environment variables or .env files
-- For Gmail, use App Passwords instead of your regular password
-- Add .env to your .gitignore file to prevent committing secrets
+1. Fill out your `plan.md` file with your specific requirements
+2. Paste it into an Qwen chat, with a basic prompt
+3. Iterate on the conversation to refine your approach, copy and paste any errors you find.
+4. Use the AI's suggestions to build your batch emailer
