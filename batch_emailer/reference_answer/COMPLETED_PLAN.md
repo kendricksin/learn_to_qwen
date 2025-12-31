@@ -32,3 +32,9 @@ Running the shell script successfully
 [Link to Qwen Chat responses](https://chat.qwen.ai/s/t_f31487bc-b1f3-4d04-bf5b-fcaf1fdeabeb?fev=0.1.30)
 > <img width="738" height="400" alt="image" src="https://github.com/user-attachments/assets/bb25039f-5d38-41ad-8fb1-dcfbbc0ec274" />
 
+Example of successful script run
+> <img width="400" height="85" alt="image" src="https://github.com/user-attachments/assets/af4a742c-e6b8-4336-a617-6c5b7cc9f238" />
+
+Example of email template successfully sent
+> <img width="1094" height="995" alt="image" src="https://github.com/user-attachments/assets/db84c0c4-0a16-40bd-b8d7-f039c8b7b88d" />
+
