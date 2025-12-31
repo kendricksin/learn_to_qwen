@@ -53,7 +53,8 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 - Download the **LTS** version (recommended for beginners)
 - Run the installer
 - Node.js is a runtime environment, and JIT compiler, we also do not technically run any exe file.
-<img width="745" height="400" alt="image" src="https://github.com/user-attachments/assets/bd213ed9-70e0-4b9c-ba21-e5ca1d5d3e70" />
+<img width="1142" height="400" alt="image" src="https://github.com/user-attachments/assets/83f2b96f-d1e4-4648-b8df-a8842ff9325d" />
+
 
 > After installing, open VSC Terminal (Bash) and type the following:
 > ```bash
