@@ -135,11 +135,12 @@ You now have a clean workspace! Everything you build will live here.
 Before writing code, ask yourself:
 
 ### 🔍 What are you trying to build?
+- Prepare a strong starting prompt giving the AI as much details as you can
 - Example: *“Make a batch emailer script that when run will send emails to my list of clients.”*
-- Or try one of these sample projects:
-  - **[Batch Emailer](./batch_emailer/README.md)** - STATUS: In Progress
-  - **[Interactive Resume Page](./interactive_resume/README.md)** - STATUS: TBC
-  - **[POS Data Analyzer](./pos_data_analyzer/README.md)** - STATUS: TBC
+> - Or try one of these sample projects:
+>   - **[Batch Emailer](./batch_emailer/README.md)** - STATUS: In Progress
+>   - **[Interactive Resume Page](./interactive_resume/README.md)** - STATUS: TBC
+>   - **[POS Data Analyzer](./pos_data_analyzer/README.md)** - STATUS: TBC
 
 ### ✅ What does “done” look like? (Define success)
 - It runs without errors
@@ -214,9 +215,9 @@ git commit -m "I added a new button"
 
 ## 🧘 Final Tips for Vibe Coding Success
 
-- **Start tiny**: Build a 5-line script before a full app
-- **Embrace errors**: They’re clues, not failures
-- **Ask Qwen to explain**, not just give answers
+- **Break it into smaller pieces**: Break the problem up into smaller problems and test each one
+- **Embrace errors**: They’re clues, not failures - solving the errors is where work gets done
+- **Ask AI to explain and offer solutions** While AI gives great answers, only the creator can make good engineering decisions
 - **Commit often**: “It works!” → commit. “Added color” → commit.
 - **Have fun**: Coding + AI = creative superpower
 
