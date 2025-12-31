@@ -23,11 +23,12 @@ I have VSC and python 3.14 installed.
 - What's the best way to handle email templates?
 - How can I ensure email credentials are secure?
 
-> **References:**
+**References:**
 > <img width="665" height="400" alt="image" src="https://github.com/user-attachments/assets/c44bf15d-6231-4b90-a323-4f4eaa9bfa30" />
-> 
+
+Running the shell script successfully
 > <img width="690" height="155" alt="image" src="https://github.com/user-attachments/assets/b998a3e1-d8fe-4d67-b9b5-92708cfc46c6" />
->
-> [Link to Qwen Chat responses](https://chat.qwen.ai/s/t_f31487bc-b1f3-4d04-bf5b-fcaf1fdeabeb?fev=0.1.30)
+
+[Link to Qwen Chat responses](https://chat.qwen.ai/s/t_f31487bc-b1f3-4d04-bf5b-fcaf1fdeabeb?fev=0.1.30)
 > <img width="738" height="400" alt="image" src="https://github.com/user-attachments/assets/bb25039f-5d38-41ad-8fb1-dcfbbc0ec274" />
 
