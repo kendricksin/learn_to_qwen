@@ -67,15 +67,14 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 > git --version
 > ```
 > If these return version numbers, you’re good!
+<img width="335" height="107" alt="image" src="https://github.com/user-attachments/assets/0109865d-2f8d-49f1-9ee0-3d1b92303208" />
+
 
 ### 4 (Optional). Get **Qwen Code**
 - Option A: Use Qwen via web at [Qwen Chat](chat.qwen.ai)
   - You can copy-paste code between browser and VS Code
 - Option B: Use **Qwen Code** (official Qwen Code extension)
   - Visit the official Qwen Code github repo for more details https://github.com/QwenLM/qwen-code
-```bash
-npm install -g @qwen-code/qwen-code@latest
-```
 
 ---
 
@@ -153,13 +152,10 @@ This is your core workflow. Repeat as needed!
 - Example prompt:  
   *“Write a python scripts that uses SMTP to send my email template to my friends email using my email.”*
 - Paste Qwen’s response into a new file in VS Code: `email_script.py`
-  *“Write a python scripts that uses SMTP to send my email template to my friends email using my email.”*
-- Paste Qwen’s response into a new file in VS Code: `email_script.py`
 
 ### 2. **Test** (Run and check)
 - In VS Code Terminal:
   ```bash
-  python email_script.py
   python email_script.py
   ```
 - Try it! Does it work? If not:
@@ -168,16 +164,12 @@ This is your core workflow. Repeat as needed!
 
 ### 3. **Commit** (Save your progress with Git)
 Every time you finish a small working version:
-Every time you finish a small working version:
 ```bash
-git add .
-git commit -m "I added a new button"
 git add .
 git commit -m "I added a new button"
 ```
 
 > ✅ Each commit is a safe checkpoint. You can always go back!
-> 🧠 **Learning**: Ask any AI Chatbot what Git is and "how to use Git like a pro"!
 > 🧠 **Learning**: Ask any AI Chatbot what Git is and "how to use Git like a pro"!
 
 ---
