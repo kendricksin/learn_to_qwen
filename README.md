@@ -1,5 +1,5 @@
-# My AI Vibe Coding Workflow  
-*A beginner-friendly guide to coding with AI assistance*
+# AI Coding Workflow (Qwen)
+*A beginner-friendly guide, with minimal setup to start coding with AI assistance*
 
 > **What is "vibe coding"?**  
 > It’s a relaxed, iterative way of building software with the help of AI. Instead of writing everything yourself, you *collaborate* with an AI like Qwen Code to brainstorm, draft, debug, and refine your code—while you stay in control!
@@ -10,14 +10,22 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 
 ## 🛠️ Tools You’ll Use (and Why)
 
-| Tool | Purpose | For Beginners |
-|------|---------|---------------|
-| **VS Code** | A free, powerful code editor | Your “digital notebook” for writing and editing code |
-| **Qwen Code** | An AI coding assistant | Your virtual coding buddy that suggests, explains, and helps fix code |
-| **Python** | A beginner-friendly programming language | Great for scripts, AI, web apps, and more |
-| **npm** | Package manager for JavaScript/Node.js | Helps you install and manage libraries (even if you use Python later) |
-| **Git** | Version control system | Saves snapshots of your work so you never lose progress |
-| **GitHub** | Online home for your code | Lets you share and back up your projects |
+<div align="center">
+  
+  
+  
+  
+  
+</div>
+
+| Tool / Technology | Purpose | For Beginners |
+|-------------------|---------|---------------|
+| **<a href="https://code.visualstudio.com/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="16" height="16" /> VS Code** | A free, powerful code editor | Your “digital notebook” for writing and editing code |
+| **<a href="https://chat.qwen.ai/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/qwen-color.png" /><img height="16px" width="16px" src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/qwen-color.png" /></picture> Qwen Code** | An AI coding assistant | Your virtual coding buddy that suggests, explains, and helps fix code |
+| **<a href="https://www.python.org/downloads/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="16" height="16" /> Python** | A beginner-friendly programming language | Great for scripts, AI, web apps, and more |
+| **<a href="https://nodejs.org/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="npm" width="16" height="16" /> npm** | Package manager for JavaScript/Node.js | Helps you install and manage libraries (even if you use Python later) |
+| **<a href="https://git-scm.com/install/windows"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="16" height="16" /> Git** | Version control system | Saves snapshots of your work so you never lose progress |
+| **<a href="https://github.com/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="16" height="16" /> GitHub** | Online home for your code | Lets you share and back up your projects |
 
 ---
 
@@ -46,10 +54,10 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 > ```
 > If these return version numbers, you’re good!
 
-### 4. Get **Qwen Code**
+### 4 (Optional). Get **Qwen Code**
 - Option A: Use **Tongyi Lingma** (official Qwen Code extension)
   - In VS Code: Go to Extensions → Search “Tongyi Lingma” → Install
-- Option B: Use Qwen via web at [https://tongyi.aliyun.com/qianwen/](https://tongyi.aliyun.com/qianwen/)
+- Option B: Use Qwen via web at [chat.qwen.ai](chat.qwen.ai)
   - You can copy-paste code between browser and VS Code
 
 ---
@@ -62,7 +70,7 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 - **Terminal** (bottom): Type commands like `python your_script.py`
   - Open it with `Ctrl + `` ` (backtick) or `View → Terminal`
 
-### Using Qwen Code (via Tongyi Lingma):
+### Using Qwen Code (via https://chat.qwen.ai/):
 1. Highlight a piece of code or place your cursor where you want help
 2. Press `Ctrl + L` (or right-click → “Ask Qwen”)
 3. Type a prompt like:
@@ -90,19 +98,30 @@ You now have a clean workspace! Everything you build will live here.
 Before writing code, ask yourself:
 
 ### 🔍 What are you trying to build?
-- Example: *“A Python script that asks for your name and says hello.”*
+- Example: *“Make a batch emailer script that when run will send emails to my list of clients.”*
+- Or try one of these sample projects:
+  - **[Batch Emailer](./batch_emailer/README.md)** - STATUS: In Progress
+  - **[Interactive Resume Page](./interactive_resume/README.md)** - STATUS: TBC
+  - **[POS Data Analyzer](./pos_data_analyzer/README.md)** - STATUS: TBC
 
 ### ✅ What does “done” look like? (Define success)
 - It runs without errors
-- It asks for input and prints a personalized message
-- You can show it to a friend
+- It reads my input files and sends emails with my selected template
+- I can send it to any email including my friends email
 
 ### ⚙️ What technologies will you use?
 - Language: **Python** (simple and readable)
 - No external libraries needed (keep it beginner-friendly)
 - Git for version control
 
-> 🧠 **AI Tip**: Ask Qwen, *“Give me 3 simple Python project ideas for beginners”* if you’re stuck!
+> 🧠 **AI Tip**: Ask AI what are the technologies availabe to choose and weigh the pros and cons
+
+### 📚 Sample Projects to Try
+Here are some sample projects you can create using vibe coding to practice your skills:
+
+- **[Batch Emailer](./batch_emailer/README.md)**: Learn about SMTP protocols and securing passwords with environment variables while creating a tool to send batch emails with HTML templates
+- **[Interactive Resume Page](./interactive_resume/README.md)**: Build a dynamic resume web page using Node.js, npm packages, and Markdown parsing
+- **[POS Data Analyzer](./pos_data_analyzer/README.md)**: Create a data visualization app to analyze Point of Sale data using Streamlit and SQLite3
 
 ---
 
@@ -172,6 +191,4 @@ git commit -m "Add working hello script"
 
 ---
 
-> You’re not just learning to code—you’re learning to **collaborate with AI** to build cool things. That’s the future. Welcome aboard! 🚀
-
-*— Inspired by your workflow, Sin*
+> Vibe coding is 50% Learning 40% Engineering Work 10% **Collaborating with AI** to build cool things. Congratulations on being part of shaping our future! 🚀
