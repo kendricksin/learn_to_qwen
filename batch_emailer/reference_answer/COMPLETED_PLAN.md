@@ -30,9 +30,13 @@ Running the shell script successfully
 > <img width="690" height="155" alt="image" src="https://github.com/user-attachments/assets/b998a3e1-d8fe-4d67-b9b5-92708cfc46c6" />
 
 **Link to Qwen Chat responses**
+
 [Initial Prompt with Plan.md](https://chat.qwen.ai/s/t_acf6a95c-e18f-4d30-ac64-4aa908558387?fev=0.1.30)
+
 [Subsequent Prompt to create setup script](https://chat.qwen.ai/s/t_488df46f-6683-46e2-9db5-75eb9604fd79?fev=0.1.30)
+
 [Generate Interactive Email Template](https://chat.qwen.ai/s/t_f31487bc-b1f3-4d04-bf5b-fcaf1fdeabeb?fev=0.1.30)
+
 > <img width="738" height="400" alt="image" src="https://github.com/user-attachments/assets/bb25039f-5d38-41ad-8fb1-dcfbbc0ec274" />
 
 Example of successful script run
