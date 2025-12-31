@@ -74,7 +74,18 @@ npm install -g @qwen-code/qwen-code@latest
 
 ---
 
-## 👀 Step 1a: Get Comfortable with VS Code & Qwen Code
+## 📁 Step 1a: Set Up Your Working Folder
+
+1. Open **File Explorer** (Windows) or **Finder** (Mac)
+2. Go to your **Documents** folder
+3. Create a new folder called `my-first-ai-project`
+4. In VS Code: `File → Open Folder` → Select this folder
+
+You now have a clean workspace! Everything you build will live here.
+
+---
+
+## 👀 Step 1b (Optional): Get Comfortable with VS Code & Qwen Code
 
 ### In VS Code:
 - **Explorer** (left sidebar): Your files and folders
@@ -91,17 +102,6 @@ npm install -g @qwen-code/qwen-code@latest
    - “Fix this error: …”
 
 > 💡 **Tip**: Treat Qwen like a senior dev teammate—be clear, specific, and polite!
-
----
-
-## 📁 Step 2: Set Up Your Working Folder
-
-1. Open **File Explorer** (Windows) or **Finder** (Mac)
-2. Go to your **Documents** folder
-3. Create a new folder called `my-first-ai-project`
-4. In VS Code: `File → Open Folder` → Select this folder
-
-You now have a clean workspace! Everything you build will live here.
 
 ---
 
