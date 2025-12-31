@@ -36,6 +36,8 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 - Download for your OS (Windows, Mac, or Linux)
 - Run the installer (keep defaults)
 - Start VS Code (this is our core tool)
+
+
 <img width="747" height="400" alt="image" src="https://github.com/user-attachments/assets/67ba2e09-dea2-4d76-91a8-9be96a22f191" />
 <img width="742" height="400" alt="image" src="https://github.com/user-attachments/assets/15083683-5a6d-449b-9786-3df1c1472e86" />
 
@@ -45,6 +47,8 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 - Download the latest version
 - ✅ **Important**: Check “Add Python to PATH” during install!
 - Python is a intepreter for the coding language, we dont have to "start a program"
+
+
 <img width="950" height="390" alt="image" src="https://github.com/user-attachments/assets/a96290e7-58a1-4f70-9cd4-705eac5dc656" />
 
 
@@ -108,7 +112,7 @@ You now have a clean workspace! Everything you build will live here.
 
 ---
 
-## 🎯 Step 3: Plan Your Project (“Architecting & Engineering”)
+## 🎯 Step 2: Plan Your Project (“Architecting & Engineering”)
 
 Before writing code, ask yourself:
 
@@ -130,7 +134,7 @@ Before writing code, ask yourself:
 - Git for version control
 
 > 💡 **AI Tip**: Treat Qwen like a senior dev teammate—be clear, specific, and polite!
-> 🧠 **AI Tip**: Ask AI what are the technologies availabe to choose and weigh the pros and cons
+> 🧠 **Learning**: Ask AI what are the technologies availabe to choose and weigh the pros and cons before making a decision.
 
 ### 📚 Sample Projects to Try
 Here are some sample projects you can create using vibe coding to practice your skills:
@@ -141,40 +145,40 @@ Here are some sample projects you can create using vibe coding to practice your 
 
 ---
 
-## 🔄 Step 4: The “Prompt → Test → Commit” Cycle
+## 🔄 Step 3: The “Prompt → Test → Commit” Cycle
 
 This is your core workflow. Repeat as needed!
 
 ### 1. **Prompt** (Ask Qwen for help)
 - Example prompt:  
-  *“Write a Python script that asks the user for their name and prints ‘Hello, [name]!’”*
-
-- Paste Qwen’s response into a new file in VS Code: `hello.py`
+  *“Write a python scripts that uses SMTP to send my email template to my friends email using my email.”*
+- Paste Qwen’s response into a new file in VS Code: `email_script.py`
+  *“Write a python scripts that uses SMTP to send my email template to my friends email using my email.”*
+- Paste Qwen’s response into a new file in VS Code: `email_script.py`
 
 ### 2. **Test** (Run and check)
 - In VS Code Terminal:
   ```bash
-  python hello.py
+  python email_script.py
+  python email_script.py
   ```
 - Try it! Does it work? If not:
   - Read the error
   - Copy it into Qwen: *“Why am I getting this error: …?”*
 
 ### 3. **Commit** (Save your progress with Git)
-First time only:
+Every time you finish a small working version:
+Every time you finish a small working version:
 ```bash
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-git init
-```
-
-Then, every time you finish a small working version:
-```bash
-git add hello.py
-git commit -m "Add working hello script"
+git add .
+git commit -m "I added a new button"
+git add .
+git commit -m "I added a new button"
 ```
 
 > ✅ Each commit is a safe checkpoint. You can always go back!
+> 🧠 **Learning**: Ask any AI Chatbot what Git is and "how to use Git like a pro"!
+> 🧠 **Learning**: Ask any AI Chatbot what Git is and "how to use Git like a pro"!
 
 ---
 
@@ -207,4 +211,5 @@ git commit -m "Add working hello script"
 
 ---
 
-> Vibe coding is 50% Learning 40% Engineering Work 10% **Collaborating with AI** to build cool things. Congratulations on being part of shaping our future! 🚀
+> *Vibe coding is 50% Learning 40% Engineering Work 10% **Collaborating with AI** to build cool things. Congratulations on being part of shaping the future of software engineering!* 🚀
+> *Vibe coding is 50% Learning 40% Engineering Work 10% **Collaborating with AI** to build cool things. Congratulations on being part of shaping the future of software engineering!* 🚀
