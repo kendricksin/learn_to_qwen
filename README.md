@@ -35,16 +35,20 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 - Go to [https://code.visualstudio.com/](https://code.visualstudio.com/)
 - Download for your OS (Windows, Mac, or Linux)
 - Run the installer (keep defaults)
+<img width="747" height="400" alt="image" src="https://github.com/user-attachments/assets/67ba2e09-dea2-4d76-91a8-9be96a22f191" />
 
 ### 2. Install **Python**
 - Go to [https://www.python.org/downloads/](https://www.python.org/downloads/)
-- Download the latest version (e.g., Python 3.12+)
+- Download the latest version
 - ✅ **Important**: Check “Add Python to PATH” during install!
+<img width="950" height="390" alt="image" src="https://github.com/user-attachments/assets/a96290e7-58a1-4f70-9cd4-705eac5dc656" />
+
 
 ### 3. Install **Node.js** (includes **npm**)
 - Go to [https://nodejs.org/](https://nodejs.org/)
 - Download the **LTS** version (recommended for beginners)
 - Run the installer
+<img width="745" height="400" alt="image" src="https://github.com/user-attachments/assets/bd213ed9-70e0-4b9c-ba21-e5ca1d5d3e70" />
 
 > After installing, open your terminal (Command Prompt on Windows, Terminal on Mac/Linux) and check:
 > ```bash
