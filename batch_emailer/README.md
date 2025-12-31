@@ -37,6 +37,8 @@ I want to build a batch emailer that sends personalized template emails to multi
 - How can I ensure email credentials are secure?
 ```
 
+Sample plan.md in reference answers
+
 ## Tips for Better AI Responses
 
 - Be specific about your requirements and constraints
@@ -60,3 +62,5 @@ I want to build a batch emailer that sends personalized template emails to multi
 2. Paste it into an Qwen chat, with a basic prompt
 3. Iterate on the conversation to refine your approach, copy and paste any errors you find.
 4. Use the AI's suggestions to build your batch emailer
+
+> **Step 2 Reference:** <img width="665" height="400" alt="image" src="https://github.com/user-attachments/assets/c44bf15d-6231-4b90-a323-4f4eaa9bfa30" />
