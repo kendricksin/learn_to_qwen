@@ -2,19 +2,30 @@
 *A beginner-friendly guide, with minimal setup to start coding with AI assistance*
 
 > **What is "vibe coding"?**  
-
 > *Vibe coding is a hilarious slang for using generative AI for software projects "This programmer is making software with nothing but vibes!". While there are lots of criticism about this approach, from an engineering perspective it has solved a significant bottleneck of software development - the learning curve.*
-
+>
 > *For myself, a practical and measured take on vibe coding is to treat it as if learning from a patient and kind software expert, applying what you learn, and solving real world problems all-in-one all in real-time.*
-
-> *Code is a means to an end, real engineering comes from learning and applying - these fundementals are timeless and would apply with or without generative AI. This tutorial is less about generative AI, and much more about setting up a learning workflow.*
-
+>
+> *Code is a means to an end, real engineering comes from learning and applying - these fundamentals are timeless and would apply with or without generative AI. This tutorial is less about generative AI, and much more about setting up a learning workflow.*
 
 This tutorial walks you through the full beginner workflow using tools like **VS Code**, **Qwen Code**, **Python**, **npm**, and **Git**. You'll go from zero to sharing your first AI-assisted project on GitHub!
 
 ---
 
+## 📖 How to Use This Manual
+> [!IMPORTANT]
+> **This is not a typical "clone and run" repository.**  
+> This manual is a **step-by-step tutorial** designed for you to copy the *workflow*, not just the code. 
+
+1. **Setup (This File):** Follow the Tool Installation and Environment Setup below.
+2. **Build (The Project):** Go to the **[Batch Emailer Guide](./batch_emailer/README.md)** to start building your first project from scratch.
+3. **Reference (The Answer):** View the **[Completed Execution](./batch_emailer/reference_answer/COMPLETED_PLAN.md)** if you want to see what a finished AI collaboration looks like.
+
+---
+
+
 ## 📋 Table of Contents
+- [📖 How to Use This Manual](#-how-to-use-this-manual)
 - [🛠️ Tools You'll Use (and Why)](#️-tools-youll-use-and-why)
 - [✅ Step 1: Download and Install the Tools](#-step-1-download-and-install-the-tools)
 - [📁 Step 1a: Set Up Your Working Folder](#-step-1a-set-up-your-working-folder)
@@ -153,6 +164,7 @@ Before writing code, ask yourself:
 - Git for version control
 
 > 💡 **AI Tip**: Treat Qwen like a senior dev teammate—be clear, specific, and polite!
+
 > 🧠 **Learning**: Ask AI what are the technologies availabe to choose and weigh the pros and cons before making a decision.
 
 ### 📚 Sample Projects to Try
