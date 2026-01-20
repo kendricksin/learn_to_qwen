@@ -12,5 +12,8 @@ Coding is an iterative process. Rarely will the first script be perfect.
 - *"How can I make interactive design templates for my email?"*
 - *"What alternatives do I have to a Python script?"*
 
+> [!TIP]
+> **Check out real iteration examples:** [STEP_3_COMPLETED.md](./reference_answer/STEP_3_COMPLETED.md)
+
 ---
 [← Step 2: Starting the Chat](STEP_2.md) | [Next Step: Build the Script →](STEP_4.md)

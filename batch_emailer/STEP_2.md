@@ -12,5 +12,8 @@ Now that you have your `plan.md` ready, it's time to start the conversation with
 ### What to expect:
 The AI should respond with a suggested folder structure, a list of libraries to install (likely `yagmail` or Python's built-in `smtplib`), and potentially a starter script.
 
+> [!TIP]
+> **See how this step looks in practice:** [STEP_2_COMPLETED.md](./reference_answer/STEP_2_COMPLETED.md)
+
 ---
 [← Step 1: Getting a Good Plan](STEP_1.md) | [Next Step: Iterate & Refine →](STEP_3.md)

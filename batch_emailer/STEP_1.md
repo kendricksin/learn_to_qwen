@@ -39,5 +39,8 @@ I want to build a batch emailer that sends personalized template emails to multi
 - Mention security (like environment variables) early.
 - Ask the AI to explain complex parts.
 
+> [!TIP]
+> **See a finished example:** [STEP_1_COMPLETED.md](./reference_answer/STEP_1_COMPLETED.md)
+
 ---
 [← Back to Overview](README.md) | [Next Step: Start the AI Chat →](STEP_2.md)

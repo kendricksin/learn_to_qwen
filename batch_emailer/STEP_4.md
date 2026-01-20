@@ -8,10 +8,10 @@ Using the AI's suggestions and your iterative refinements, it's time to finalize
 3. **Secure your credentials** in the `.env` file.
 
 ### Reference Answer
-If you want to see a completed version of what this project looks like, check the reference answer:
+If you want to see the final results and project success, check the reference answer:
 
 > [!IMPORTANT]
-> **Completed Example:** [COMPLETED_PLAN.md](./reference_answer/COMPLETED_PLAN.md)
+> **Completed Example:** [STEP_4_COMPLETED.md](./reference_answer/STEP_4_COMPLETED.md)
 
 ---
 [← Step 3: Iterating & Refining](STEP_3.md) | [Back to Overview](README.md)
