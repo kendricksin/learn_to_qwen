@@ -44,7 +44,7 @@ This tutorial walks you through the full beginner workflow using tools like **VS
   
   
   
-  
+    
 </div>
 
 | Tool / Technology | Purpose | For Beginners |
@@ -173,6 +173,7 @@ Here are some sample projects you can create using vibe coding to practice your 
 - **[Batch Emailer](./batch_emailer/README.md)**: Learn about SMTP protocols and securing passwords with environment variables while creating a tool to send batch emails with HTML templates
 - **[Interactive Resume Page](./interactive_resume/README.md)**: Build a dynamic resume web page using Node.js, npm packages, and Markdown parsing
 - **[POS Data Analyzer](./pos_data_analyzer/README.md)**: Create a data visualization app to analyze Point of Sale data using Streamlit and SQLite3
+- **[Serverless PDF Parser](./serverless_pdf_parser/README.md)**: Using Alibaba Cloud Function Compute to create a serverless PDF parser that parses PDF using Qwen API and storing the output in Object Storage
 
 ---
 
