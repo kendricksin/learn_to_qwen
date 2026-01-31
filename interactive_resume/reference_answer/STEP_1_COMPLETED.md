@@ -44,9 +44,6 @@ I want to build a modern, interactive resume web page that displays my professio
 - Mention that you want to use the JSON Resume standard.
 - Ask the AI to help you set up the initial React project structure.
 
-> [!TIP]
-> **See a finished example:** [STEP_1_COMPLETED.md](./reference_answer/STEP_1_COMPLETED.md)
-
 ---
 [← Back to Overview](README.md) | [Next Step: Start the AI Chat →](STEP_2.md)
 ---
