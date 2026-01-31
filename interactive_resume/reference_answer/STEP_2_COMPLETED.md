@@ -6,19 +6,35 @@ Here is an example of a good opening prompt to send to the AI, based on the plan
 
 Copy and paste this into your AI chat:
 
-> Hi Qwen! I want to build a custom interactive resume using React and Vite. Here is my plan:
->
-> **Project**: Interactive Resume
-> **Goal**: A responsive, single-page resume populated by a `resume.json` file.
-> **Tech Stack**: React, Vite, CSS Modules or Reference CSS, Lucide React (for icons).
->
-> **Specifics**:
->
-> 1. I want to start with a blank Vite project.
-> 2. I need a `resume.json` schema that covers Basics, Work, Education, and Skills.
-> 3. Please create the folder structure and the first component (`Header.jsx`) to display my name and summary.
->
-> Can you guide me through the setup?
+> Help me build my resume website given the following plan.md input. create a shell script to setup my project folder.
+> 
+> ## Project Overview:
+> I want to build a modern, interactive resume web page using React that displays my professional profile from a standard JSON format that I can edit easily.
+> 
+> ## 1. What are you trying to build?
+> - Resume website designed for Clarity, Speed, and Professional Tone
+> - Easy to Verify and Connect with links to my other profile pages and contact information
+> 
+> ## 2. What does 'done' look like?
+> - It Loads Fast and Works Everywhere
+> - Key Info Is Easy to Find (in <10 seconds)
+> - Looks Clean and Professional
+> 
+> ## 3. What technologies will you use?
+> - HTML
+> - CSS
+> - GitHub Pages
+> - JSON resume
+> 
+> ## Additional Requirements
+> - Customization: Have downloadable PDF format on click, allow light and dark mode
+> - Deployment: It should be easy to host on GitHub Pages and I can refresh it anytime
+> 
+> ## Specific Questions
+> - Can you provide a sample `resume.json` based on the standard?
+> - How can I add a personal touch to the theme?
+
+https://chat.qwen.ai/s/t_89430767-0932-47ac-9f07-9cd82e95d9de?fev=0.1.38
 
 ### The Outcome
 
