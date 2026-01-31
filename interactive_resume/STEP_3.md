@@ -1,31 +1,62 @@
-# Step 3: Iterate on the Conversation
+# Step 3: Run the Setup Script & Test Locally
 
-Building a web app is rarely a "one-shot" process. You'll need to refine the design and handle more complex parts.
+Time to bring your project to life! Follow these steps to set up and test your resume website.
 
-### Handling Complexity
+### Step 3.1: Create the Setup Script
 
-Once you have a basic page running, start adding more features or refining the look.
+1. Create a new file called `create.sh` in your project folder
+2. Paste the shell script from the AI into this file
+3. Save the file
 
-**Example Refinement Prompts:**
+### Step 3.2: Run the Script
 
-- *"How can I change the primary color of the resume to a nice emerald green?"*
-- *"I want to add a 'Projects' section that shows images of my work. How do I update my `resume.json` and the React code?"*
-- *"Can we add a smooth fade-in animation when the page loads?"*
+Open your terminal and run:
 
-### Debugging & Learning
+```bash
+chmod +x create.sh
+./create.sh
+```
 
-If you run into an error (which is normal!), just copy and paste it back to the AI.
+This will create your project folder with all the necessary files.
 
-**Prompting for Errors:**
-> "I'm getting this error in my terminal: `[Paste error here]`. What does this mean and how can I fix it?"
+### Step 3.3: Test Locally
+
+Navigate to your project folder and start a local server:
+
+```bash
+cd interactive_resume
+npx serve .
+```
+
+Or if you prefer Python:
+
+```bash
+cd interactive_resume
+python -m http.server 8000
+```
+
+### Step 3.4: View in Browser
+
+Open your browser and go to:
+- `http://localhost:3000` (if using npx serve)
+- `http://localhost:8000` (if using Python)
+
+You should see your resume website!
+
+### Troubleshooting
+
+If something doesn't work, copy the error and ask the AI:
+
+> *"I'm getting this error when running my setup script: [paste error]. How do I fix it?"*
 
 ### Pro-Tips
 
-- Ask the AI to explain *why* it's suggesting a certain change.
-- Keep your commits small and frequent. "Got the basic layout working" → Commit!
+- Keep your terminal open to see any errors
+- Use browser DevTools (F12) to debug CSS/JS issues
+- Make small changes and refresh to see results
 
 > [!TIP]
 > **See a finished example:** [STEP_3_COMPLETED.md](./reference_answer/STEP_3_COMPLETED.md)
 
 ---
-[← Step 2: Prompting](STEP_2.md) | [Next Step: Build & Finalize →](STEP_4.md)
+[← Step 2: Prompting](STEP_2.md) | [Next Step: Deploy to GitHub Pages →](STEP_4.md)

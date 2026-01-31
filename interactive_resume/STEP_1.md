@@ -1,36 +1,69 @@
 # Step 1: Fill out your plan.md
 
-A good plan is the foundation of a successful AI-assisted project. Before you start prompting, clarify your goals using the **3-Question Approach**:
+A good plan is the foundation of a successful AI-assisted project. Before you start prompting, clarify your goals using the **3-Question Approach**.
 
-1. **What are you trying to build?** tip: Use AI to guide your product design. e.g. "How can I make my resume stand out?" "I want to showcase my personal projects in the frontpage" etc.
-2. **What does 'done' look like?** tip: Put yourself in the user perspective reading your resume. Ask AI what makes a resume stand out.
-3. **What technology will you use?**  tip: Ask AI for reccomended technologies and list the pros and cons e.g. "What tech stack fits my purpose? List the pros and cons of using that technology"
+Use AI to help you answer each question:
+
+### Question 1: What are you trying to build?
+
+Ask the AI to help you define your goals:
+> *"I want to build a resume website. What features should I include to make it stand out?"*
+
+**Key considerations:**
+- Clarity, Speed, and Professional Tone
+- Easy to verify and connect (links to profiles, contact info)
+- What makes a resume memorable?
+
+### Question 2: What does 'done' look like?
+
+Put yourself in the recruiter's perspective:
+> *"What makes a resume website effective? What should a recruiter see in the first 10 seconds?"*
+
+**Success criteria:**
+- Loads fast and works everywhere
+- Key info is easy to find (< 10 seconds)
+- Looks clean and professional
+
+### Question 3: What technologies will you use?
+
+Ask AI for recommendations:
+> *"What tech stack should I use for a simple resume website that's easy to deploy? List pros and cons."*
+
+**Consider:**
+- HTML/CSS vs React vs other frameworks
+- GitHub Pages for free hosting
+- JSON Resume standard for data
+
+---
 
 ### Create Your `plan.md`
 
-Create a file named `plan.md` in your project folder and use the following template:
+Create a file named `plan.md` in your project folder:
 
 ```markdown
 ## Project Overview:
-I want to build a modern, interactive resume web page using React that displays my professional profile from a standard JSON format that I can edit easily.
+I want to build a modern, interactive resume web page that displays my professional profile from a standard JSON format that I can edit easily.
 
 ## 1. What are you trying to build?
-[Your specific requirements here]
+- Resume website designed for Clarity, Speed, and Professional Tone
+- Easy to Verify and Connect with links to my other profile pages and contact information
 
 ## 2. What does 'done' look like?
-[Your success criteria here]
+- It Loads Fast and Works Everywhere
+- Key Info Is Easy to Find (in <10 seconds)
+- Looks Clean and Professional
 
 ## 3. What technologies will you use?
-[Your technology stack here]
+- HTML
+- CSS
+- GitHub Pages
+- JSON resume
 
 ## Additional Requirements
-- Customization: I want to be able to change the color palette easily. I want to be able to update my resume easily.
-- Interactivity: The resume should feel responsive, reacting to users mouse hovers and link to detailed tabs of each section.
-- Deployment: It should be easy to host on GitHub Pages.
+- Customization: Have downloadable PDF format on click, allow light and dark mode
+- Deployment: It should be easy to host on GitHub Pages and I can refresh it anytime
 
 ## Specific Questions
-- What's the best way to structure a Vite React project for a resume?
-- How do I integrate the `@welovedevs/react-ultimate-resume` library?
 - Can you provide a sample `resume.json` based on the standard?
 - How can I add a personal touch to the theme?
 ```
@@ -39,7 +72,7 @@ I want to build a modern, interactive resume web page using React that displays 
 
 - Be specific about the visual style you want (e.g., "minimalist", "bold", "dark mode").
 - Mention that you want to use the JSON Resume standard.
-- Ask the AI to help you set up the initial React project structure.
+- Ask the AI to explain why it recommends certain approaches.
 
 > [!TIP]
 > **See a finished example:** [STEP_1_COMPLETED.md](./reference_answer/STEP_1_COMPLETED.md)

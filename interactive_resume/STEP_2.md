@@ -1,27 +1,49 @@
-# Step 2: Paste it into Qwen Chat
+# Step 2: Paste Your Plan into AI Chat
 
 Now that you have a plan, it's time to start collaborating with the AI.
 
-### Preparing the Prompt
+### The Prompt
 
-Copy the contents of your `plan.md` and use it as your first prompt. You can add a friendly introduction to set the context.
+Copy your `plan.md` and ask the AI to create a setup script:
 
-**Example Starting Prompt:**
-> "Hi Qwen! I'm a beginner wanting to build an interactive resume. Here is my project plan: [Paste your plan.md content here]. Can you help me get started with the project structure and the first steps?"
+> Help me build my resume website given the following plan.md input. Create a shell script to setup my project folder.
+>
+> [Paste your plan.md content here]
 
 ### What to Expect
 
-- Qwen will suggest a folder structure (likely using Vite and React).
-- It will give you the commands to install the necessary libraries, including `@welovedevs/react-ultimate-resume`.
-- It might provide a basic `App.jsx` to get things running.
+The AI should provide:
+
+1. **A shell script (`create.sh`)** that sets up your entire project:
+   - Creates folder structure
+   - Generates HTML, CSS, and JS files
+   - Creates a sample `resume.json`
+
+2. **Instructions for GitHub Pages deployment**
+   - How to create a repository
+   - How to enable GitHub Pages
+   - How to push your code
+
+### Example Response
+
+The AI will give you something like:
+
+```bash
+#!/bin/bash
+# create.sh - Sets up the interactive resume project
+
+mkdir -p interactive_resume/src/{css,js}
+# ... creates all necessary files
+```
 
 ### Pro-Tips
 
-- If the AI gives you a lot of code at once, ask it to break it down.
-- Don't worry if you don't understand everything yet—you're just setting up the foundation!
+- Ask for a **single shell script** that does everything - easier to run and reproduce.
+- If the output is too long, ask: *"Can you combine this into one setup script?"*
+- Request the script includes a sample `resume.json` with placeholder data.
 
 > [!TIP]
 > **See a finished example:** [STEP_2_COMPLETED.md](./reference_answer/STEP_2_COMPLETED.md)
 
 ---
-[← Step 1: Planning](STEP_1.md) | [Next Step: Iterate & Refine →](STEP_3.md)
+[← Step 1: Planning](STEP_1.md) | [Next Step: Run the Setup Script →](STEP_3.md)
