@@ -45,6 +45,4 @@ I want to build a modern, interactive resume web page that displays my professio
 - Ask the AI to help you set up the initial React project structure.
 
 ---
-[← Back to Overview](README.md) | [Next Step: Start the AI Chat →](STEP_2.md)
----
 [← Back to Step 1](../STEP_1.md) | [Next: Step 2 Reference →](STEP_2_COMPLETED.md)
