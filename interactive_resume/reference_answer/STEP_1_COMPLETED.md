@@ -12,7 +12,7 @@ This is how a finalized `plan.md` should look before you start prompting.
 
 ```markdown
 ## Project Overview:
-I want to build a modern, interactive resume web page using React that displays my professional profile from a standard JSON format that I can edit easily.
+I want to build a modern, interactive resume web page that displays my professional profile from a standard JSON format that I can edit easily.
 
 ## 1. What are you trying to build?
 - Resume website designed for Clarity, Speed, and Professional Tone
