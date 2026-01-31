@@ -1,32 +1,17 @@
-# Step 4 Reference: Final Build
+# Step 4 Reference: Final Deployment on Github Pages
 
-This file represents the state of the project after you have finished building and polishing it.
+https://chat.qwen.ai/s/t_bca3ac88-d0fe-4821-b534-fcc610d1f807?fev=0.1.38
 
-### Final Checklist
+<img width="1023" height="636" alt="image" src="https://github.com/user-attachments/assets/df97f01d-f311-483d-a126-a2f31f28e515" />
 
-- [x] All data is loading correctly from `resume.json`.
-- [x] The design is responsive (works on mobile).
-- [x] No console errors.
-- [x] Hover effects and links are working.
+<img width="786" height="125" alt="image" src="https://github.com/user-attachments/assets/ff08c588-18a9-4df3-816a-f07b35e7de13" />
 
-### The "Reference Answer" Code
 
-The folder `interactive-resume` in this directory contains the minimal, clean implementation of this project. You can compare your code against it if you get stuck.
+<img width="1255" height="848" alt="image" src="https://github.com/user-attachments/assets/a899bf3a-d39c-4fb2-9eef-2934c551d5d0" />
 
-**Key Features Implemented:**
+<img width="1403" height="800" alt="image" src="https://github.com/user-attachments/assets/aa0ad607-c87a-4fb1-b29c-0bc81d838e25" />
 
-- **Navigation**: Simple one-page scroll.
-- **Components**: `Header`, `Experience`, `Education`, `Skills`.
-- **Styling**: Pure CSS with Variables (no heavy frameworks).
-- **Icons**: `lucide-react`.
 
-### Run it locally
-
-```bash
-cd interactive-resume
-npm install
-npm run dev
-```
 
 ---
 [← Back to Step 4](../STEP_4.md) | [Back to Hub](../README.md)
