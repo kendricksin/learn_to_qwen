@@ -35,7 +35,7 @@ Copy and paste this into your AI chat:
 > - How can I add a personal touch to the theme?
 
 https://chat.qwen.ai/s/t_89430767-0932-47ac-9f07-9cd82e95d9de?fev=0.1.38
-
+https://chat.qwen.ai/s/t_4b2ebe67-d506-4344-8d90-a43b8408a6b2?fev=0.1.38
 ### The Outcome
 
 By sending this prompt, the AI should:
