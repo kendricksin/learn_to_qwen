@@ -40,9 +40,8 @@ https://chat.qwen.ai/s/t_4b2ebe67-d506-4344-8d90-a43b8408a6b2?fev=0.1.38
 
 By sending this prompt, the AI should:
 
-1. Give you the `npm create vite` command.
-2. Provide the JSON structure for `src/data/resume.json`.
-3. Write the initial code for `App.jsx` and `Header.jsx`.
-
+1. Get the create script, use it to setup project folder and contents easily.
+2. Give you instructions on how to setup GitHub Pages
+   
 ---
 [← Back to Step 2](../STEP_2.md) | [Next: Step 3 Reference →](STEP_3_COMPLETED.md)
