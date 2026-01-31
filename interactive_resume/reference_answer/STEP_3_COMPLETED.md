@@ -1,29 +1,19 @@
-# Step 3 Reference: Iteration Example
+# Step 3 Reference: Running create.sh to setup project
 
-Once the basics are working, you'll want to refine the look. Here is an example of an iteration loop.
+We will follow the instructions given by the AI to setup the project folder and test locally.
 
-### The Request (Prompt)
->
-> "The resume looks a bit plain. Can we add a global dark theme using CSS variables? I want a customized look with a dark slate background and emerald green accents. Also, please add a fade-in animation to the sections."
+Reference Link (asking AI how to create and run the shell script):
+https://chat.qwen.ai/s/t_bca3ac88-d0fe-4821-b534-fcc610d1f807?fev=0.1.38
 
-### The Changes
+## First: Create the setup script in any folder
+<img width="411" height="627" alt="image" src="https://github.com/user-attachments/assets/dd3795f1-3b99-4e81-8733-83c911ec8951" />
 
-The AI would modify your `src/index.css` to add variables like:
+## Second: Use NPM run on terminall to test locally
+<img width="954" height="226" alt="image" src="https://github.com/user-attachments/assets/a985b63a-d54b-4467-9f4d-fa9c9385e03d" />
 
-```css
-:root {
-  --bg-primary: #0f172a;
-  --accent-color: #10b981;
-}
-```
+## Third: Visit local host on your browser
+<img width="1110" height="868" alt="image" src="https://github.com/user-attachments/assets/63f3e015-f028-47d3-b130-fe980b696c37" />
 
-And update your components to use these variables.
-
-### Another Iteration
->
-> "I want to add a proper 'Experience' section that lists my jobs. Please create an `Experience.jsx` component that maps through the `work` array in my JSON."
-
-This is how you build the app piece by piece!
 
 ---
 [← Back to Step 3](../STEP_3.md) | [Next: Step 4 Reference →](STEP_4_COMPLETED.md)
