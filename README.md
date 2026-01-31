@@ -149,8 +149,8 @@ Before writing code, ask yourself:
 - Prepare a strong starting prompt giving the AI as much details as you can
 - Example: *“Make a batch emailer script that when run will send emails to my list of clients.”*
 > - Or try one of these sample projects:
->   - **[Batch Emailer](./batch_emailer/README.md)** - STATUS: In Progress
->   - **[Interactive Resume Page](./interactive_resume/README.md)** - STATUS: TBC
+>   - **[Batch Emailer](./batch_emailer/README.md)** - STATUS: Compelted
+>   - **[Interactive Resume Page](./interactive_resume/README.md)** - STATUS: Completed [External Repo](https://github.com/kendricksin/interactive_resume)
 >   - **[POS Data Analyzer](./pos_data_analyzer/README.md)** - STATUS: TBC
 
 ### ✅ What does “done” look like? (Define success)
@@ -172,8 +172,8 @@ Here are some sample projects you can create using vibe coding to practice your 
 
 - **[Batch Emailer](./batch_emailer/README.md)**: Learn about SMTP protocols and securing passwords with environment variables while creating a tool to send batch emails with HTML templates
 - **[Interactive Resume Page](./interactive_resume/README.md)**: Build a dynamic resume web page using Node.js, npm packages, and Markdown parsing
-- **[POS Data Analyzer](./pos_data_analyzer/README.md)**: Create a data visualization app to analyze Point of Sale data using Streamlit and SQLite3
-- **[Serverless PDF Parser](./serverless_pdf_parser/README.md)**: Using Alibaba Cloud Function Compute to create a serverless PDF parser that parses PDF using Qwen API and storing the output in Object Storage
+- IN PROGRESS [POS Data Analyzer](./pos_data_analyzer/README.md): Create a data visualization app to analyze Point of Sale data using Streamlit and SQLite3
+- IN PROGRESS [Serverless PDF Parser](./serverless_pdf_parser/README.md): Using Alibaba Cloud Function Compute to create a serverless PDF parser that parses PDF using Qwen API and storing the output in Object Storage
 
 ---
 
