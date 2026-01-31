@@ -2,8 +2,7 @@
 
 We will follow the instructions given by the AI to setup the project folder and test locally.
 
-Reference Link (asking AI how to create and run the shell script):
-https://chat.qwen.ai/s/t_bca3ac88-d0fe-4821-b534-fcc610d1f807?fev=0.1.38
+[Asking AI how to create and run the shell script](https://chat.qwen.ai/s/t_bca3ac88-d0fe-4821-b534-fcc610d1f807?fev=0.1.38)
 
 ## First: Create the setup script in any folder
 <img width="411" height="627" alt="image" src="https://github.com/user-attachments/assets/dd3795f1-3b99-4e81-8733-83c911ec8951" />

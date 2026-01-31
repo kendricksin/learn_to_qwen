@@ -2,11 +2,11 @@
 
 This is how a finalized `plan.md` should look before you start prompting.
 
-- Link to chat "What are you trying to build?" https://chat.qwen.ai/s/t_36718fa3-a2b6-41c7-a8db-223569db3910?fev=0.1.38
-- Link to chat "What does done look like?" https://chat.qwen.ai/s/t_9982d3f2-ef5a-400a-b73c-93a0f3977fd0?fev=0.1.38
+- Link to chat ["What are you trying to build?"](https://chat.qwen.ai/s/t_36718fa3-a2b6-41c7-a8db-223569db3910?fev=0.1.38)
+- Link to chat ["What does done look like?"](https://chat.qwen.ai/s/t_9982d3f2-ef5a-400a-b73c-93a0f3977fd0?fev=0.1.38)
 - Link to chat "What technologies will you use?"
-- https://chat.qwen.ai/s/t_b9cf71ea-982e-4a02-b64e-14c137baf45b?fev=0.1.38
-- https://chat.qwen.ai/s/t_e428886c-ac0e-4078-b612-3056f07840da?fev=0.1.38
+- [Technology Use Part 1](https://chat.qwen.ai/s/t_b9cf71ea-982e-4a02-b64e-14c137baf45b?fev=0.1.38)
+- [Technology Use Part 2](https://chat.qwen.ai/s/t_e428886c-ac0e-4078-b612-3056f07840da?fev=0.1.38)
 
 ### Sample `plan.md`
 

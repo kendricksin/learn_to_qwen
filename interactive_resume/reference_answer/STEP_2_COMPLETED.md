@@ -34,14 +34,13 @@ Copy and paste this into your AI chat:
 > - Can you provide a sample `resume.json` based on the standard?
 > - How can I add a personal touch to the theme?
 
-https://chat.qwen.ai/s/t_89430767-0932-47ac-9f07-9cd82e95d9de?fev=0.1.38
-https://chat.qwen.ai/s/t_4b2ebe67-d506-4344-8d90-a43b8408a6b2?fev=0.1.38
+
 ### The Outcome
 
 By sending this prompt, the AI should:
 
-1. Get the create script, use it to setup project folder and contents easily.
-2. Give you instructions on how to setup GitHub Pages
+1. Get the create script, use it to setup project folder and contents easily. [Chat Example](https://chat.qwen.ai/s/t_89430767-0932-47ac-9f07-9cd82e95d9de?fev=0.1.38)
+2. Give you instructions on how to setup GitHub Pages. [Chat Example](https://chat.qwen.ai/s/t_4b2ebe67-d506-4344-8d90-a43b8408a6b2?fev=0.1.38)
    
 ---
 [← Back to Step 2](../STEP_2.md) | [Next: Step 3 Reference →](STEP_3_COMPLETED.md)
