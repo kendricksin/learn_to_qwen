@@ -94,7 +94,7 @@ Example minimal policy:
 
 ## Configure OSS Credentials
 
-Add your OSS credentials to `.env`:
+Add your OSS credentials to your `.env` file (not `.env.example`!):
 
 ```bash
 # .env
@@ -102,11 +102,18 @@ DASHSCOPE_API_KEY=sk-your-api-key-here
 DASHSCOPE_REGION=singapore
 
 # OSS Configuration
-OSS_ACCESS_KEY_ID=your-ram-access-key-id
-OSS_ACCESS_KEY_SECRET=your-ram-access-key-secret
+OSS_ACCESS_KEY_ID=your-ram-access-key-id  # Replace with your actual RAM user key!
+OSS_ACCESS_KEY_SECRET=your-ram-access-key-secret  # Replace with your actual secret!
 OSS_REGION=oss-ap-southeast-1  # Singapore region
-OSS_BUCKET=my-video-editor-bucket
+OSS_BUCKET=my-video-editor-bucket  # Replace with your actual bucket name!
 ```
+
+> [!WARNING]
+> **Double-check before committing:**
+> ```bash
+> git status
+> ```
+> If you see `.env` in the list of files to be committed, **STOP!** Add it to `.gitignore` immediately.
 
 **Region codes:**
 - Singapore: `oss-ap-southeast-1`

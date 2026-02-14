@@ -59,6 +59,42 @@ This project has unique challenges compared to simpler projects:
 
 ---
 
+## ⚠️ IMPORTANT: Set Up Your Environment Files First!
+
+Before creating your plan, set up your environment files to protect your API keys:
+
+### 1. Copy the Environment Template
+
+```bash
+# Navigate to the ai_video_editor folder
+cd ai_video_editor
+
+# Copy the template
+cp .env.example .env
+```
+
+### 2. Verify .gitignore Exists
+
+Check that `.gitignore` is present in your project folder:
+
+```bash
+ls -la | grep gitignore
+```
+
+You should see `.gitignore` in the list. This file prevents your secrets from being committed to Git.
+
+> [!WARNING]
+> **Never commit `.env` to Git!**
+> The `.env` file will contain your actual API keys and passwords. The `.gitignore` file is already configured to protect it, but always double-check before committing.
+
+### 3. Understand What Goes Where
+
+- **`.env.example`** - Template with placeholder values (safe to commit)
+- **`.env`** - Your actual API keys (NEVER commit this!)
+- **`.gitignore`** - Tells Git to ignore `.env` and other sensitive files
+
+---
+
 ## Create Your `plan.md`
 
 Create a file named `plan.md` in your project folder. Here's a template:
@@ -106,7 +142,11 @@ I want to build an AI-powered video editing tool that uses character swap techno
 ## Pro-Tips
 
 - **Start Simple**: Get the basic flow working first (upload → API call → result), then add polish
-- **Security First**: Never commit API keys to Git. Use environment variables from day one.
+- **Security First**:
+  - ✅ Copy `.env.example` to `.env` immediately
+  - ✅ Add your real API keys only to `.env` (not `.env.example`)
+  - ✅ Verify `.gitignore` includes `.env` before your first commit
+  - ✅ Use `git status` to confirm `.env` is not being tracked
 - **Cost Awareness**: Understand pricing before building. Set up billing alerts in Alibaba Cloud console.
 - **Ask for Examples**: Request sample code for OSS upload and WAN API calls from the AI
 

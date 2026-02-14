@@ -48,6 +48,18 @@ Before starting this project, make sure you have:
 - **Basic JavaScript knowledge** (or willingness to learn with AI assistance)
 - **Git** for version control
 
+## ⚠️ Important: Set Up Environment Variables
+
+> [!IMPORTANT]
+> **Before you start coding**, copy the environment template file:
+>
+> ```bash
+> cp .env.example .env
+> ```
+>
+> Then edit `.env` with your actual API keys. **Never commit the `.env` file to Git!**
+> The `.gitignore` file is already configured to protect your secrets.
+
 ## Estimated Costs
 
 - **WAN Animate Mix API**: Pay-per-use pricing (check current rates)

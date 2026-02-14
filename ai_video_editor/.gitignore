@@ -1,0 +1,27 @@
+# Environment Variables (NEVER COMMIT THESE!)
+.env
+
+# Node modules
+node_modules/
+
+# Uploaded files (temporary storage)
+uploads/
+temp/
+*.tmp
+
+# Log files
+logs/
+*.log
+
+# Build outputs
+dist/
+build/
+
+# Test coverage
+coverage/
+
+# Secrets and credentials (extra safety)
+*.key
+*.pem
+credentials.json
+secrets.json

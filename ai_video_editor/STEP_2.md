@@ -60,21 +60,27 @@ You'll need to activate two services:
 
 ### Save Your API Key Securely
 
-Create a `.env` file in your project folder:
+> [!IMPORTANT]
+> If you haven't already, copy the environment template:
+> ```bash
+> cp .env.example .env
+> ```
+
+Now edit your `.env` file and add your actual API key:
 
 ```bash
 # .env
-DASHSCOPE_API_KEY=sk-your-api-key-here
+DASHSCOPE_API_KEY=sk-your-actual-api-key-here  # Replace with your real key!
 DASHSCOPE_REGION=singapore  # or 'beijing'
 ```
 
-Add `.env` to your `.gitignore`:
+**Verify your `.gitignore` includes `.env`** (it should already be there):
 
 ```bash
-# .gitignore
-.env
-node_modules/
+cat .gitignore | grep .env
 ```
+
+You should see `.env` listed. This prevents accidental commits of your secrets.
 
 ---
 
