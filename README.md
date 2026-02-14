@@ -58,6 +58,20 @@ This tutorial walks you through the full beginner workflow using tools like **VS
 
 ---
 
+## 📚 Sample Projects
+
+Here are hands-on projects you can build using this workflow:
+
+| Project | Description | Status |
+|---------|-------------|--------|
+| **[Batch Emailer](./batch_emailer/README.md)** | Learn about SMTP protocols and securing passwords with environment variables while creating a tool to send batch emails with HTML templates | ✅ Completed |
+| **[Interactive Resume Page](./interactive_resume/README.md)** | Build a dynamic resume web page using Node.js, npm packages, and Markdown parsing | ✅ Completed |
+| **[AI Video Editor](./ai_video_editor/README.md)** | Build a personalized promotional campaign tool using Alibaba Cloud's WAN Animate Mix API for AI-powered character swapping in videos, with OSS storage and full-stack implementation | 🔜 Coming Soon |
+| **[POS Data Analyzer](./pos_data_analyzer/README.md)** | Create a data visualization app to analyze Point of Sale data using Streamlit and SQLite3 | 🚧 In Progress |
+| **[Serverless PDF Parser](./serverless_pdf_parser/README.md)** | Using Alibaba Cloud Function Compute to create a serverless PDF parser that parses PDF using Qwen API and storing the output in Object Storage | 🚧 In Progress |
+
+---
+
 ## ✅ Step 1: Download and Install the Tools
 
 ### 1. Install **VS Code** (or any IDE)
@@ -168,12 +182,7 @@ Before writing code, ask yourself:
 > 🧠 **Learning**: Ask AI what are the technologies availabe to choose and weigh the pros and cons before making a decision.
 
 ### 📚 Sample Projects to Try
-Here are some sample projects you can create using vibe coding to practice your skills:
-
-- **[Batch Emailer](./batch_emailer/README.md)**: Learn about SMTP protocols and securing passwords with environment variables while creating a tool to send batch emails with HTML templates
-- **[Interactive Resume Page](./interactive_resume/README.md)**: Build a dynamic resume web page using Node.js, npm packages, and Markdown parsing
-- IN PROGRESS [POS Data Analyzer](./pos_data_analyzer/README.md): Create a data visualization app to analyze Point of Sale data using Streamlit and SQLite3
-- IN PROGRESS [Serverless PDF Parser](./serverless_pdf_parser/README.md): Using Alibaba Cloud Function Compute to create a serverless PDF parser that parses PDF using Qwen API and storing the output in Object Storage
+Check out the [Sample Projects](#-sample-projects) section above for hands-on tutorials you can build using this workflow!
 
 ---
 
