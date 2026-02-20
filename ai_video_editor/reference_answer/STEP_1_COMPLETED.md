@@ -4,15 +4,12 @@ This is how a finalized `plan.md` should look before you start setting up cloud 
 
 ## AI Chat Sessions (Examples)
 
-- [What are you trying to build?](#) - _Link to be added_
-- [What does done look like?](#) - _Link to be added_
-- [What technologies should I use?](#) - _Link to be added_
-- [Understanding technical challenges](#) - _Link to be added_
+- [Example Prompt with minimal background knowledge #1](https://chat.qwen.ai/s/t_f82d2759-6a33-47c6-8433-5511691582e7?fev=0.2.7)
+- [Example Prompt with minimal background knowledge #2](https://chat.qwen.ai/s/t_293138f3-c4d0-4f3e-90ba-15d196359d7f?fev=0.2.7)
+<img width="892" height="720" alt="image" src="https://github.com/user-attachments/assets/5984a18c-ee0a-47ee-ae2a-3892267e26a2" />
 
-## Screenshots
-
-_Add screenshots of your AI conversations here_
-
+- [Example Advanced Prompt with some engineering knowledge](https://chat.qwen.ai/s/t_6f78bf9d-1d97-4650-a4b6-577cfc85411e?fev=0.2.7)
+<img width="900" height="414" alt="image" src="https://github.com/user-attachments/assets/ea2a7f47-a2c5-4e37-a217-57f2fe75dd82" />
 ---
 
 ## Sample Completed `plan.md`
