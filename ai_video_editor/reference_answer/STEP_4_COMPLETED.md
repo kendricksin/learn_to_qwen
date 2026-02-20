@@ -4,10 +4,7 @@ This shows what a working WAN API integration looks like after completing Step 4
 
 ## AI Chat Sessions (Examples)
 
-- [Help me build the WAN API client](#) - _Link to be added_
-- [How to handle async task polling](#) - _Link to be added_
-- [Building Express server endpoints](#) - _Link to be added_
-- [Error handling best practices](#) - _Link to be added_
+- [Help me create a node.js server to test the WAN Animate API endpoint](https://chat.qwen.ai/s/t_c3b2f6ee-f9ee-42df-bf76-147de1bb1b48?fev=0.2.7)
 
 ## Screenshots
 
