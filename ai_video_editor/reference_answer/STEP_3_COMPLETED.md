@@ -4,9 +4,8 @@ This shows what a successful OSS setup looks like after completing Step 3.
 
 ## AI Chat Sessions (Examples)
 
-- [Understanding OSS bucket settings](#) - _Link to be added_
-- [RAM user permissions explained](#) - _Link to be added_
-- [Configuring CORS for browser uploads](#) - _Link to be added_
+- [What is OSS bucket?](https://chat.qwen.ai/s/t_6c2e43c3-90a0-4665-b281-ce5a11cfad21?fev=0.2.7)
+- [What is the AccessKey and how do I secure it? What to do if I commit it?](https://chat.qwen.ai/s/t_e51a15b1-0298-4f72-a434-d28401271f7a?fev=0.2.7)
 
 ## Screenshots
 
