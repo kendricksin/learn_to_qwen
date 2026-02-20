@@ -4,11 +4,9 @@ This shows what a successful Alibaba Cloud setup looks like after completing Ste
 
 ## AI Chat Sessions (Examples)
 
-- [Help me understand Alibaba Cloud regions](#) - _Link to be added_
-- [How to secure API keys](#) - _Link to be added_
-- [Setting up billing alerts](#) - _Link to be added_
-
-## Screenshots
+- [How to create alibaba cloud account and start using the various cloud services?](https://chat.qwen.ai/s/t_c0ecfb10-1409-4e73-b940-bf6b284a4b8b?fev=0.2.7)
+- [How do i get my API keys and make sure that it is securely stored?](https://chat.qwen.ai/s/t_510c1313-b8ba-4460-bc8f-c801b8a0ef83?fev=0.2.7)
+- [How do I make sure to stay within free tier usage?](https://chat.qwen.ai/s/t_a1bdbce8-49da-42b5-b937-521fdf7b8083?fev=0.2.7)
 
 ### Account Setup
 _Add screenshots of:_
