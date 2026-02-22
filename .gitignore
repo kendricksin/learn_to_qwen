@@ -19,6 +19,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+samples/
 
 # Virtual environments
 venv/
@@ -44,3 +45,5 @@ Thumbs.db
 
 # Logs
 *.log
+
+.qwen/

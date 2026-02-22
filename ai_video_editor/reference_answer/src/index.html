@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Video Editor</h1>
+            <p>Transform your images into animated videos using AI</p>
+        </header>
+        
+        <main>
+            <section class="upload-section">
+                <h2>Upload Files</h2>
+                
+                <div class="file-upload-group">
+                    <div class="file-input-container">
+                        <label for="imageFile">Select Character Image:</label>
+                        <input type="file" id="imageFile" accept="image/*">
+                        <div class="file-info" id="imageInfo"></div>
+                    </div>
+                    
+                    <div class="file-input-container">
+                        <label for="videoFile">Select Template Video:</label>
+                        <input type="file" id="videoFile" accept="video/*">
+                        <div class="file-info" id="videoInfo"></div>
+                    </div>
+                </div>
+                
+                <!-- Previous Files Section -->
+                <div class="previous-files-section">
+                    <h3>Previously Uploaded Images</h3>
+                    <div class="files-grid" id="previousImages"></div>
+                    
+                    <h3>Previously Uploaded Videos</h3>
+                    <div class="files-grid" id="previousVideos"></div>
+                </div>
+                
+                <button id="uploadBtn" class="btn-primary">Upload Files</button>
+                <div id="uploadProgress" class="progress hidden">
+                    <div class="progress-bar"></div>
+                    <span class="progress-text">Uploading...</span>
+                </div>
+            </section>
+            
+            <section class="process-section hidden">
+                <h2>Process Files</h2>
+                
+                <div class="preview-container">
+                    <div class="preview-item">
+                        <h3>Character Image</h3>
+                        <img id="previewImage" src="" alt="Preview">
+                    </div>
+                    
+                    <div class="preview-item">
+                        <h3>Template Video</h3>
+                        <video id="previewVideo" controls>
+                            <source src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                
+                <button id="processBtn" class="btn-primary">Animate Character</button>
+            </section>
+            
+            <section class="status-section hidden">
+                <h2>Animation Status</h2>
+                
+                <div class="status-info">
+                    <p><strong>Task ID:</strong> <span id="taskId"></span></p>
+                    <p><strong>Status:</strong> <span id="taskStatus">Pending</span></p>
+                    <p><strong>Progress:</strong> <span id="taskProgress">0%</span></p>
+                </div>
+                
+                <div id="progressContainer" class="progress-container">
+                    <div class="progress-bar-container">
+                        <div id="progressBar" class="progress-bar" style="width: 0%;"></div>
+                    </div>
+                </div>
+                
+                <div id="loadingMessage" class="loading-message hidden">
+                    <p>Please wait while your video is being processed...</p>
+                </div>
+                
+                <div id="resultContainer" class="result-container hidden">
+                    <h3>Animation Complete!</h3>
+                    <video id="resultVideo" controls>
+                        <source id="resultVideoSource" src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <a id="downloadLink" class="btn-primary" target="_blank">Download Video</a>
+                </div>
+            </section>
+            
+            <section class="history-section">
+                <h2>Task History</h2>
+                <div class="task-history-list" id="taskHistoryList">
+                    <p>No tasks yet. Process some files to see them here.</p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>AI Video Editor powered by Alibaba Cloud WAN</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
