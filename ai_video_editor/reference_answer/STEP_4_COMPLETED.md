@@ -9,18 +9,10 @@ This shows what a working WAN API integration looks like after completing Step 4
 ## Screenshots
 
 ### Successful API Test
-_Add screenshots of:_
-- [ ] Test script submitting a task
-- [ ] Console showing task ID returned
-- [ ] Polling progress messages
-- [ ] Final video URL displayed
+<img width="1383" height="494" alt="image" src="https://github.com/user-attachments/assets/c884909d-b112-4b99-aa01-dd452e26405a" />
 
 ### Server Running
-_Add screenshots of:_
-- [ ] Express server started on port 3000
-- [ ] API endpoint tests (Postman/curl)
-- [ ] Successful upload response
-- [ ] Task status response
+<img width="847" height="283" alt="image" src="https://github.com/user-attachments/assets/bd89bfa8-a89e-4d5d-a039-4c02c04cae61" />
 
 ---
 
