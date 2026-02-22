@@ -10,23 +10,14 @@ This shows what a successful OSS setup looks like after completing Step 3.
 ## Screenshots
 
 ### OSS Bucket Creation
-_Add screenshots of:_
-- [ ] OSS Console showing bucket list
-- [ ] Create bucket dialog with settings
-- [ ] Bucket successfully created confirmation
-- [ ] Bucket overview page
+
 
 ### RAM User Setup
-_Add screenshots of:_
-- [ ] RAM Console with new user created
-- [ ] User permissions/policies attached
-- [ ] AccessKey credentials shown (redacted)
+![6109499075309800922](https://github.com/user-attachments/assets/ff98e0d9-9ac2-4e76-988b-b590095d57e4)
+<img width="1280" height="826" alt="image" src="https://github.com/user-attachments/assets/8837464b-fc3f-422f-b62b-6ea21f465530" />
+<img width="1142" height="331" alt="image" src="https://github.com/user-attachments/assets/6805a8cf-0b3b-4a02-85f9-f45810e9f414" />
+![6109499075309800930](https://github.com/user-attachments/assets/9e0a72c1-c8b1-43b9-bcfb-32c9e0ac3c6a)
 
-### OSS Configuration
-_Add screenshots of:_
-- [ ] CORS settings configured
-- [ ] Lifecycle rules (if set up)
-- [ ] Bucket properties/settings
 
 ---
 
@@ -61,7 +52,7 @@ After Step 3, you should have:
 - [x] File downloaded successfully
 - [x] File deleted successfully
 
-### ✅ Optional: CORS & Lifecycle
+### ✅ Optional: CORS & Lifecycle (OPTIONAL)
 - [x] CORS configured (if using browser uploads)
 - [x] Lifecycle rule for temp files (optional)
 
