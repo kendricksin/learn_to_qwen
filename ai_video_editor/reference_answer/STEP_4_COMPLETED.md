@@ -5,7 +5,9 @@ This shows what a working WAN API integration looks like after completing Step 4
 ## AI Chat Sessions (Examples)
 
 - [Help me create a node.js server to test the WAN Animate API endpoint](https://chat.qwen.ai/s/t_c3b2f6ee-f9ee-42df-bf76-147de1bb1b48?fev=0.2.7)
-
+- [Help me write a shell script to test oss upload via cli](https://chat.qwen.ai/s/t_ff6b5bcc-5ad5-4d3b-b7eb-1d39d65fc677?fev=0.2.7)
+- [How to install ossutil](https://chat.qwen.ai/s/t_8447d763-186b-4783-90db-0457867428c7?fev=0.2.7)
+- [Help me write a script that calls wan 2.2 animate mix api via curl](https://chat.qwen.ai/s/t_7039edb5-8a90-4872-ab0a-41fc3e8bc160?fev=0.2.7)
 ## Screenshots
 
 ### Successful API Test
