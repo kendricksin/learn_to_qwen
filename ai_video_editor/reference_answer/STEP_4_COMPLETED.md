@@ -152,48 +152,152 @@ module.exports = WANClient;
 
 ## Test Results
 
-### Successful Task Submission
+### Complete cURL Test Script
+
+Create a test script to execute all API endpoints in sequence:
 
 ```bash
-$ node test-swap.js
+#!/bin/bash
 
-🚀 Submitting task...
-📋 Task ID: task-abc123def456
-⏳ Waiting for completion...
-Task task-abc123def456: PENDING...
-Task task-abc123def456: RUNNING...
-Task task-abc123def456: RUNNING...
-✅ Done!
-🎥 Result URL: https://dashscope-result.oss-cn-beijing.aliyuncs.com/video-2024/result_xyz.mp4
+# Test script for AI Video Editor API endpoints
+# Save this as test-api.sh and make it executable with chmod +x test-api.sh
+
+# Variables
+SERVER_URL="http://localhost:3000"
+IMAGE_PATH="./samples/character.jpg"  # Update with your image path
+VIDEO_PATH="./samples/template.mp4"  # Update with your video path
+
+echo "🚀 Starting AI Video Editor API test..."
+
+# Test 1: Upload files
+echo -e "\n📋 Testing upload endpoint..."
+UPLOAD_RESPONSE=$(curl -s -X POST \
+  -F "image=@$IMAGE_PATH" \
+  -F "video=@$VIDEO_PATH" \
+  "$SERVER_URL/upload")
+
+echo "Upload response:"
+echo "$UPLOAD_RESPONSE" | jq .
+
+# Extract URLs from response
+IMAGE_URL=$(echo "$UPLOAD_RESPONSE" | jq -r '.imageUrl')
+VIDEO_URL=$(echo "$UPLOAD_RESPONSE" | jq -r '.videoUrl')
+
+if [[ "$IMAGE_URL" != "null" && "$VIDEO_URL" != "null" ]]; then
+  echo -e "\n✅ Upload successful!"
+  echo "Image URL: $IMAGE_URL"
+  echo "Video URL: $VIDEO_URL"
+  
+  # Test 2: Submit swap task
+  echo -e "\n🔄 Testing swap endpoint..."
+  SWAP_RESPONSE=$(curl -s -X POST \
+    -H "Content-Type: application/json" \
+    -d "{\"imageUrl\":\"$IMAGE_URL\",\"videoUrl\":\"$VIDEO_URL\"}" \
+    "$SERVER_URL/swap")
+  
+  echo "Swap response:"
+  echo "$SWAP_RESPONSE" | jq .
+  
+  TASK_ID=$(echo "$SWAP_RESPONSE" | jq -r '.taskId')
+  
+  if [[ "$TASK_ID" != "null" ]]; then
+    echo -e "\n📋 Task submitted successfully! Task ID: $TASK_ID"
+    
+    # Test 3: Check status (poll until complete)
+    echo -e "\n📊 Monitoring task status (this may take several minutes)..."
+    while true; do
+      STATUS_RESPONSE=$(curl -s "$SERVER_URL/status/$TASK_ID")
+      STATUS=$(echo "$STATUS_RESPONSE" | jq -r '.status')
+      
+      echo "Task $TASK_ID: $STATUS"
+      
+      if [[ "$STATUS" == "SUCCEEDED" ]]; then
+        VIDEO_URL=$(echo "$STATUS_RESPONSE" | jq -r '.details.video_url')
+        echo -e "\n✅ Task completed successfully!"
+        echo "Final video URL: $VIDEO_URL"
+        break
+      elif [[ "$STATUS" == "FAILED" ]]; then
+        ERROR_MSG=$(echo "$STATUS_RESPONSE" | jq -r '.details.error_message // "Unknown error"')
+        echo -e "\n❌ Task failed: $ERROR_MSG"
+        break
+      fi
+      
+      sleep 15  # Wait 15 seconds before next check
+    done
+  else
+    echo -e "\n❌ Failed to submit task"
+  fi
+else
+  echo -e "\n❌ Upload failed"
+fi
+
+echo -e "\n🏁 API test completed!"
 ```
 
-### Server Endpoints Working
+### Alternative Simple cURL Commands
+
+If you prefer to test each endpoint individually:
 
 ```bash
-# Test upload
-$ curl -F "image=@character.jpg" -F "video=@template.mp4" http://localhost:3000/upload
+# 1. Test upload (replace with your actual files)
+curl -X POST http://localhost:3000/upload \
+  -F "image=@./samples/character.jpg" \
+  -F "video=@./samples/template.mp4"
 
-{
-  "imageUrl": "https://my-bucket.oss-region.aliyuncs.com/uploads/images/character_123.jpg",
-  "videoUrl": "https://my-bucket.oss-region.aliyuncs.com/uploads/videos/template_456.mp4"
-}
-
-# Test swap
-$ curl -X POST http://localhost:3000/swap \
+# 2. Test swap (use URLs from upload response)
+curl -X POST http://localhost:3000/swap \
   -H "Content-Type: application/json" \
-  -d '{"imageUrl":"...", "videoUrl":"..."}'
+  -d '{"imageUrl":"YOUR_IMAGE_URL_HERE","videoUrl":"YOUR_VIDEO_URL_HERE"}'
 
+# 3. Check status (replace TASK_ID with the one from swap response)
+curl http://localhost:3000/status/TASK_ID
+
+# 4. Test health check
+curl http://localhost:3000/
+
+# 5. Get recent images
+curl http://localhost:3000/recent-images
+
+# 6. Get recent videos
+curl http://localhost:3000/recent-videos
+
+# 7. Get task history
+curl http://localhost:3000/task-history
+```
+
+### Expected Successful Flow
+
+```bash
+$ chmod +x test-api.sh
+$ ./test-api.sh
+
+🚀 Starting AI Video Editor API test...
+
+📋 Testing upload endpoint...
+Upload response:
 {
-  "taskId": "task-abc123def456"
+  "imageUrl": "https://your-bucket.oss-region.aliyuncs.com/uploads/images/image-12345.jpg",
+  "videoUrl": "https://your-bucket.oss-region.aliyuncs.com/uploads/videos/video-67890.mp4",
+  "message": "Files uploaded to OSS successfully"
 }
+✅ Upload successful!
 
-# Check status
-$ curl http://localhost:3000/status/task-abc123def456
-
+🔄 Testing swap endpoint...
+Swap response:
 {
-  "status": "RUNNING",
-  "progress": "Processing..."
+  "taskId": "task-abc123def456",
+  "message": "Task submitted successfully"
 }
+📋 Task submitted successfully! Task ID: task-abc123def456
+
+📊 Monitoring task status...
+Task task-abc123def456: PENDING
+Task task-abc123def456: RUNNING
+Task task-abc123def456: RUNNING
+✅ Task completed successfully!
+Final video URL: https://dashscope-result.oss-cn-beijing.aliyuncs.com/.../result.mp4
+
+🏁 API test completed!
 ```
 
 ---
