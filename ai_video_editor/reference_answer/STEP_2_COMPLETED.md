@@ -21,11 +21,15 @@ This shows what a successful Alibaba Cloud setup looks like after completing Ste
 ![6109499075309800920](https://github.com/user-attachments/assets/f2782e01-d140-4ac8-86ad-f13f9bc69982)
 <img width="1920" height="856" alt="image" src="https://github.com/user-attachments/assets/faf87fe1-86ed-4d1c-aca2-aa30388843ef" />
 
+### OSS Activation
+![6109499075309800921](https://github.com/user-attachments/assets/c05081f7-0e23-4d2a-8e45-0c2a621e7c16)
+![6109499075309800919](https://github.com/user-attachments/assets/46e3a559-31ff-45cd-8f4b-b86087bc5624)
+
 
 ### Environment Configuration
-_Add screenshot of completed `.env` file (with keys redacted)_
+<img width="1548" height="997" alt="image" src="https://github.com/user-attachments/assets/852d37b5-2fee-46d3-a684-14672988cd87" />
+<img width="1540" height="929" alt="image" src="https://github.com/user-attachments/assets/9866f3a2-7cb2-4f78-90e3-d8294e726794" />
 
----
 
 ## Completed Checklist
 
