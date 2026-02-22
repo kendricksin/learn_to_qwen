@@ -9,17 +9,18 @@ This shows what a successful Alibaba Cloud setup looks like after completing Ste
 - [How do I make sure to stay within free tier usage?](https://chat.qwen.ai/s/t_a1bdbce8-49da-42b5-b937-521fdf7b8083?fev=0.2.7)
 
 ### Account Setup
-_Add screenshots of:_
-- [ ] Alibaba Cloud sign-up confirmation
-- [ ] Payment method added
-- [ ] Model Studio activated
-- [ ] OSS service activated
+![6109499075309800932](https://github.com/user-attachments/assets/58ed0258-73ec-493d-bc3f-0d8072f5975c)
+![6109499075309800931](https://github.com/user-attachments/assets/7d407903-c79b-45a7-9ff3-01d99192926b)
+![6109499075309800933](https://github.com/user-attachments/assets/90b5435b-4fbc-417b-bf82-73ed97ba311e)
+![6109499075309800934](https://github.com/user-attachments/assets/ed81f071-9d45-42cb-af5d-6e41b6a515fb)
+![6109499075309800924](https://github.com/user-attachments/assets/e6c04872-d04b-4cee-acf4-21a1596a9feb)
+![6109499075309800916](https://github.com/user-attachments/assets/3c4fdcf4-1fb3-465c-8ed6-de3eec054ad9)
 
 ### API Key Generation
-_Add screenshots of:_
-- [ ] DashScope console showing API key
-- [ ] API key creation dialog
-- [ ] Region selection (Singapore/Beijing)
+![6109499075309800918](https://github.com/user-attachments/assets/010e05d2-0010-4cfc-99a8-c021343d7a4e)
+![6109499075309800920](https://github.com/user-attachments/assets/f2782e01-d140-4ac8-86ad-f13f9bc69982)
+<img width="1920" height="856" alt="image" src="https://github.com/user-attachments/assets/faf87fe1-86ed-4d1c-aca2-aa30388843ef" />
+
 
 ### Environment Configuration
 _Add screenshot of completed `.env` file (with keys redacted)_
