@@ -10,7 +10,7 @@ This shows what a successful OSS setup looks like after completing Step 3.
 ## Screenshots
 
 ### OSS Bucket Creation
-
+[Refer to OSS Documentation:](https://www.alibabacloud.com/help/en/oss/user-guide/console-quick-start)
 
 ### RAM User Setup
 ![6109499075309800922](https://github.com/user-attachments/assets/ff98e0d9-9ac2-4e76-988b-b590095d57e4)
