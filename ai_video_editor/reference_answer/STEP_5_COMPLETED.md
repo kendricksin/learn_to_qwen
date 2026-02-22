@@ -10,24 +10,10 @@ This shows what a working frontend interface looks like after completing Step 5.
 - [Building the video player](#) - _Link to be added_
 
 ## Screenshots
-
-### User Interface Views
-_Add screenshots of:_
-- [ ] Upload section (empty state)
-- [ ] Files selected, ready to process
-- [ ] Processing with loading spinner
-- [ ] Result video playing
-- [ ] Mobile responsive view
-
-### UI States
-_Add screenshots showing:_
-- [ ] File validation error message
-- [ ] Upload progress indicator
-- [ ] Processing status updates
-- [ ] Success state with download button
-- [ ] Error state with retry option
-
----
+<img width="909" height="881" alt="image" src="https://github.com/user-attachments/assets/138f1f88-f614-4f2a-8e18-1e36c16e2de3" />
+<img width="999" height="825" alt="image" src="https://github.com/user-attachments/assets/a9772f67-c82b-448e-aa70-1dbb2ccd0ac3" />
+<img width="646" height="753" alt="image" src="https://github.com/user-attachments/assets/0373b723-8126-442c-b109-e5251656f7f7" />
+<img width="882" height="881" alt="image" src="https://github.com/user-attachments/assets/04ee945c-9468-49d4-a8de-8f790139e7ee" />
 
 ## Completed Checklist
 
