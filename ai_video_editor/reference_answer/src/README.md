@@ -28,7 +28,7 @@ DASHSCOPE_API_KEY=your-api-key-here
 OSS_ACCESS_KEY_ID=your-oss-access-key
 OSS_ACCESS_KEY_SECRET=your-oss-secret-key
 OSS_REGION=oss-ap-southeast-1
-OSS_BUCKET=your-bucket-name
+OSS_BUCKET=BUCKET_NAME
 ```
 
 ## Running the Server
