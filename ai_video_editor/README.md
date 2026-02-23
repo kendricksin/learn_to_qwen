@@ -31,11 +31,8 @@ Follow these sequential steps to build your project from scratch:
 4. **[Step 4: Explore the WAN API with Node.js](STEP_4.md)**
    - Build a Node.js server to test and interact with the WAN Animate Mix API.
 
-5. **[Step 5: Create the User Interface](STEP_5.md)**
+5. **[Step 5: Create the User Interface](STEP_5.md)** **COMPLETED**
    - Build a simple web page for users to upload images/videos and see results.
-
-6. **[Step 6: Deploy and Test](STEP_6.md)**
-   - Finalize your application and check the reference answers.
 
 ---
 
