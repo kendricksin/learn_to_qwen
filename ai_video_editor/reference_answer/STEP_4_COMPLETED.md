@@ -22,6 +22,11 @@ This shows what a working WAN API integration looks like after completing Step 4
 
 After Step 4, you should have:
 
+### ✅ API Integration Testing
+- [x] OSS upload tested with `test-oss-upload.sh`
+- [x] WAN 2.2 Animate Mix API tested with `test-wan-2.2.sh`
+- [x] Individual API components validated
+
 ### ✅ Project Initialized
 - [x] `ai-video-editor-server` folder created
 - [x] `package.json` created with `npm init -y`
@@ -34,24 +39,18 @@ After Step 4, you should have:
 - [x] `getTaskStatus()` method working
 - [x] `waitForCompletion()` method with polling
 
-### ✅ API Integration Tested
-- [x] Test files uploaded to OSS
-- [x] `test-swap.js` script created
-- [x] Successfully submitted a character swap task
-- [x] Task completed and video URL received
-
 ### ✅ Express Server Built
 - [x] `server.js` file created
-- [x] POST `/upload` endpoint (file uploads)
-- [x] POST `/swap` endpoint (submit task)
+- [x] POST `/upload` endpoint (file uploads to OSS)
+- [x] POST `/swap` endpoint (submit task to WAN API)
 - [x] GET `/status/:taskId` endpoint (check progress)
 - [x] Error handling implemented
 
 ### ✅ Server Tested
 - [x] Server runs on port 3000
-- [x] Upload endpoint accepts files
-- [x] Swap endpoint returns task ID
-- [x] Status endpoint shows task progress
+- [x] Upload endpoint accepts files and stores in OSS
+- [x] Swap endpoint returns task ID from WAN API
+- [x] Status endpoint shows task progress from WAN API
 
 ---
 
@@ -146,152 +145,131 @@ module.exports = WANClient;
 
 ## Test Results
 
-### Complete cURL Test Script
+### Testing Workflow: OSS Upload First, Then WAN API
 
-Create a test script to execute all API endpoints in sequence:
+Before building the server, follow this testing workflow:
+
+#### 1. Test OSS Upload to Server
+Use the `test-oss-upload.sh` script to verify OSS upload functionality:
 
 ```bash
-#!/bin/bash
+# Make the script executable
+chmod +x test-oss-upload.sh
 
-# Test script for AI Video Editor API endpoints
-# Save this as test-api.sh and make it executable with chmod +x test-api.sh
-
-# Variables
-SERVER_URL="http://localhost:3000"
-IMAGE_PATH="./samples/character.jpg"  # Update with your image path
-VIDEO_PATH="./samples/template.mp4"  # Update with your video path
-
-echo "🚀 Starting AI Video Editor API test..."
-
-# Test 1: Upload files
-echo -e "\n📋 Testing upload endpoint..."
-UPLOAD_RESPONSE=$(curl -s -X POST \
-  -F "image=@$IMAGE_PATH" \
-  -F "video=@$VIDEO_PATH" \
-  "$SERVER_URL/upload")
-
-echo "Upload response:"
-echo "$UPLOAD_RESPONSE" | jq .
-
-# Extract URLs from response
-IMAGE_URL=$(echo "$UPLOAD_RESPONSE" | jq -r '.imageUrl')
-VIDEO_URL=$(echo "$UPLOAD_RESPONSE" | jq -r '.videoUrl')
-
-if [[ "$IMAGE_URL" != "null" && "$VIDEO_URL" != "null" ]]; then
-  echo -e "\n✅ Upload successful!"
-  echo "Image URL: $IMAGE_URL"
-  echo "Video URL: $VIDEO_URL"
-  
-  # Test 2: Submit swap task
-  echo -e "\n🔄 Testing swap endpoint..."
-  SWAP_RESPONSE=$(curl -s -X POST \
-    -H "Content-Type: application/json" \
-    -d "{\"imageUrl\":\"$IMAGE_URL\",\"videoUrl\":\"$VIDEO_URL\"}" \
-    "$SERVER_URL/swap")
-  
-  echo "Swap response:"
-  echo "$SWAP_RESPONSE" | jq .
-  
-  TASK_ID=$(echo "$SWAP_RESPONSE" | jq -r '.taskId')
-  
-  if [[ "$TASK_ID" != "null" ]]; then
-    echo -e "\n📋 Task submitted successfully! Task ID: $TASK_ID"
-    
-    # Test 3: Check status (poll until complete)
-    echo -e "\n📊 Monitoring task status (this may take several minutes)..."
-    while true; do
-      STATUS_RESPONSE=$(curl -s "$SERVER_URL/status/$TASK_ID")
-      STATUS=$(echo "$STATUS_RESPONSE" | jq -r '.status')
-      
-      echo "Task $TASK_ID: $STATUS"
-      
-      if [[ "$STATUS" == "SUCCEEDED" ]]; then
-        VIDEO_URL=$(echo "$STATUS_RESPONSE" | jq -r '.details.video_url')
-        echo -e "\n✅ Task completed successfully!"
-        echo "Final video URL: $VIDEO_URL"
-        break
-      elif [[ "$STATUS" == "FAILED" ]]; then
-        ERROR_MSG=$(echo "$STATUS_RESPONSE" | jq -r '.details.error_message // "Unknown error"')
-        echo -e "\n❌ Task failed: $ERROR_MSG"
-        break
-      fi
-      
-      sleep 15  # Wait 15 seconds before next check
-    done
-  else
-    echo -e "\n❌ Failed to submit task"
-  fi
-else
-  echo -e "\n❌ Upload failed"
-fi
-
-echo -e "\n🏁 API test completed!"
+# Run the OSS upload test
+./test-oss-upload.sh
 ```
 
-### Alternative Simple cURL Commands
+This script will:
+- Upload local files (`./samples/cutie_wizard.png` and `./samples/dancing.mp4`) to the server
+- The server will store them in OSS
+- Return public URLs for the uploaded files
+- Display the URLs for use with the WAN API
 
-If you prefer to test each endpoint individually:
+#### 2. Test WAN 2.2 Animate Mix API
+Use the `test-wan-2.2.sh` script to verify WAN API functionality:
 
 ```bash
-# 1. Test upload (replace with your actual files)
+# Make the script executable
+chmod +x test-wan-2.2.sh
+
+# Run the WAN API test
+./test-wan-2.2.sh
+```
+
+This script will:
+- Use the OSS URLs from your upload
+- Call the WAN 2.2 Animate Mix API directly
+- Submit a character animation task
+- Poll for completion (every 30s for up to 5 minutes)
+- Display the final video URL when complete
+
+#### 3. Comprehensive Server Test
+After building the server, use the `test-debug.sh` script to test the complete workflow:
+
+```bash
+# Make the script executable
+chmod +x test-debug.sh
+
+# Run the complete server test
+./test-debug.sh
+```
+
+This script will:
+- Test all server endpoints in sequence
+- Upload files to server → OSS
+- Submit task to WAN API via server
+- Monitor task status via server
+- Provide comprehensive debugging output
+
+### Manual Testing Without Scripts
+
+#### 1. Test OSS Upload Manually
+```bash
+# Upload files to server (server handles OSS upload)
 curl -X POST http://localhost:3000/upload \
-  -F "image=@./samples/character.jpg" \
-  -F "video=@./samples/template.mp4"
-
-# 2. Test swap (use URLs from upload response)
-curl -X POST http://localhost:3000/swap \
-  -H "Content-Type: application/json" \
-  -d '{"imageUrl":"YOUR_IMAGE_URL_HERE","videoUrl":"YOUR_VIDEO_URL_HERE"}'
-
-# 3. Check status (replace TASK_ID with the one from swap response)
-curl http://localhost:3000/status/TASK_ID
-
-# 4. Test health check
-curl http://localhost:3000/
-
-# 5. Get recent images
-curl http://localhost:3000/recent-images
-
-# 6. Get recent videos
-curl http://localhost:3000/recent-videos
-
-# 7. Get task history
-curl http://localhost:3000/task-history
+  -F "image=@./samples/your-character-image.jpg" \
+  -F "video=@./samples/your-template-video.mp4"
 ```
 
-### Expected Successful Flow
-
-```bash
-$ chmod +x test-api.sh
-$ ./test-api.sh
-
-🚀 Starting AI Video Editor API test...
-
-📋 Testing upload endpoint...
-Upload response:
+**Expected Response:**
+```json
 {
   "imageUrl": "https://your-bucket.oss-region.aliyuncs.com/uploads/images/image-12345.jpg",
   "videoUrl": "https://your-bucket.oss-region.aliyuncs.com/uploads/videos/video-67890.mp4",
   "message": "Files uploaded to OSS successfully"
 }
-✅ Upload successful!
+```
 
-🔄 Testing swap endpoint...
-Swap response:
+#### 2. Test WAN API Directly (using URLs from step 1)
+```bash
+# Use the OSS URLs from the upload response
+curl -X POST https://dashscope-intl.aliyuncs.com/api/v1/services/aigc/image2video/video-synthesis \
+  -H "Authorization: Bearer YOUR_API_KEY_HERE" \
+  -H "Content-Type: application/json" \
+  -H "X-DashScope-Async: enable" \
+  -d '{
+    "model": "wan2.2-animate-mix",
+    "input": {
+      "image_url": "https://your-oss-image-url.jpg",
+      "video_url": "https://your-oss-video-url.mp4"
+    },
+    "parameters": {
+      "service_mode": "wan-std",
+      "mode": "wan-std"
+    }
+  }'
+```
+
+**Expected Response:**
+```json
 {
-  "taskId": "task-abc123def456",
-  "message": "Task submitted successfully"
+  "request_id": "fb-123-abc",
+  "output": {
+    "task_id": "task-abc123def456",
+    "task_status": "PENDING"
+  }
 }
-📋 Task submitted successfully! Task ID: task-abc123def456
+```
 
-📊 Monitoring task status...
-Task task-abc123def456: PENDING
-Task task-abc123def456: RUNNING
-Task task-abc123def456: RUNNING
-✅ Task completed successfully!
-Final video URL: https://dashscope-result.oss-cn-beijing.aliyuncs.com/.../result.mp4
+#### 3. Check Task Status
+```bash
+curl -X GET https://dashscope-intl.aliyuncs.com/api/v1/tasks/task-abc123def456 \
+  -H "Authorization: Bearer YOUR_API_KEY_HERE"
+```
 
-🏁 API test completed!
+**Expected Response:**
+```json
+{
+  "request_id": "fb-123-abc",
+  "output": {
+    "task_id": "task-abc123def456",
+    "task_status": "SUCCEEDED",
+    "video_url": "https://dashscope-result.oss-cn-beijing.aliyuncs.com/video-2024/result.mp4",
+    "submit_time": "2024-01-15 10:30:00",
+    "end_time": "2024-01-15 10:35:23"
+  }
+}
 ```
 
 ---
