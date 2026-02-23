@@ -4,10 +4,7 @@ This shows what a working frontend interface looks like after completing Step 5.
 
 ## AI Chat Sessions (Examples)
 
-- [Help me design the UI layout](#) - _Link to be added_
-- [Implementing drag-and-drop uploads](#) - _Link to be added_
-- [Creating loading animations](#) - _Link to be added_
-- [Building the video player](#) - _Link to be added_
+- [Generate a js frontend for my client such that i can upload image and video, preview upload with direct playback, call the animate api, poll the status with progress bar, return the download link, download and directly playback the video in browser.](https://chat.qwen.ai/s/t_e7f3ac42-22e4-4c1b-b8ad-856849de1021?fev=0.2.7)
 
 ## Screenshots
 <img width="909" height="881" alt="image" src="https://github.com/user-attachments/assets/138f1f88-f614-4f2a-8e18-1e36c16e2de3" />
