@@ -78,4 +78,4 @@ The AI should provide you with HTML, CSS, and JavaScript files.
 
 ---
 
-[← Step 4: Explore WAN API](STEP_4.md) | [Next Step: Deploy and Test →](STEP_6.md)
+[← Step 4: Explore WAN API](STEP_4.md) | FINISHED
