@@ -66,7 +66,7 @@ Here are hands-on projects you can build using this workflow:
 |---------|-------------|--------|
 | **[Batch Emailer](./batch_emailer/README.md)** | Learn about SMTP protocols and securing passwords with environment variables while creating a tool to send batch emails with HTML templates | ✅ Completed |
 | **[Interactive Resume Page](./interactive_resume/README.md)** | Build a dynamic resume web page using Node.js, npm packages, and Markdown parsing | ✅ Completed |
-| **[AI Video Editor](./ai_video_editor/README.md)** | Build a personalized promotional campaign tool using Alibaba Cloud's WAN Animate Mix API for AI-powered character swapping in videos, with OSS storage and full-stack implementation | 🔜 Coming Soon |
+| **[AI Video Editor](./ai_video_editor/README.md)** | Build a personalized promotional campaign tool using Alibaba Cloud's WAN Animate Mix API for AI-powered character swapping in videos, with OSS storage and full-stack implementation | ✅ Completed |
 | **[POS Data Analyzer](./pos_data_analyzer/README.md)** | Create a data visualization app to analyze Point of Sale data using Streamlit and SQLite3 | 🚧 In Progress |
 | **[Serverless PDF Parser](./serverless_pdf_parser/README.md)** | Using Alibaba Cloud Function Compute to create a serverless PDF parser that parses PDF using Qwen API and storing the output in Object Storage | 🚧 In Progress |
 
