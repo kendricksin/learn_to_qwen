@@ -115,12 +115,10 @@ I want to build an AI-powered video editing tool that uses character swap techno
 
 ### Q: How do I set up OSS service accounts with minimal permissions?
 **A:** Use RAM users with scoped permissions:
-```env
 OSS_ACCESS_KEY_ID=LTAI...      # RAM user key, not master key
 OSS_ACCESS_KEY_SECRET=...
 OSS_BUCKET=your-bucket-name
 OSS_REGION=oss-ap-southeast-7   # Match your bucket region
-```
 **Permissions needed:**
 - `oss:PutObject` - Upload files
 - `oss:GetObject` - Download results
@@ -128,95 +126,7 @@ OSS_REGION=oss-ap-southeast-7   # Match your bucket region
 
 ---
 
-### Q: What's the best way to poll the WAN API for task completion?
-**A: Exponential Backoff Strategy** (learned from experience!)
-
-```javascript
-const getPollDelay = (attempt) => {
-    if (attempt <= 4) return 30000;   // First 2 min: 30s (gentle)
-    if (attempt <= 12) return 15000;  // Min 2-4: 15s (expected completion)
-    if (attempt <= 20) return 10000;  // Min 4-6: 10s (should be done)
-    return 20000;                      // After 6 min: 20s (don't spam)
-};
-
-// Handle rate limiting
-if (response.status === 429) {
-    setTimeout(poll, 60000); // Wait 1 minute on rate limit
-    return;
-}
-```
-
-**Why this works:**
-- ~40% fewer API calls in first 2 minutes
-- More responsive near expected completion (4-5 min)
-- Graceful handling of rate limits
-- Respectful to API resources
-
----
-
-### Q: Should I store videos temporarily or use direct OSS upload from browser?
-**A: Upload to OSS first, then use those URLs**
-
-**Flow:**
-```
-User Upload → Server → OSS → Get Public URL → WAN API
-```
-
-**Why:**
-- WAN API needs **publicly accessible URLs** (cannot access localhost)
-- OSS provides permanent HTTPS URLs
-- Files persist beyond 24-hour WAN API URL expiration
-- Better for production (can add CDN later)
-
-**Implementation:**
-```javascript
-// 1. Upload to OSS
-const ossUrl = await uploadToOSS(filePath, fileName);
-
-// 2. Use OSS URL for WAN API
-const wanResponse = await axios.post(WAN_API_URL, {
-    input: { image_url: ossUrl, video_url: ossUrl }
-});
-
-// 3. Download result and save permanently
-await downloadVideo(resultUrl, 'results/final.mp4');
-```
-
----
-
-### Q: How can I implement a simple queue for multiple video requests?
-**A: In-memory task registry with rate limiting**
-
-```javascript
-// Task tracking (use database in production)
-const taskRegistry = new Map();
-
-// Rate limiting per IP
-const limiter = rateLimit({
-    windowMs: 3600000,  // 1 hour
-    max: 10             // 10 requests per hour
-});
-
-// Queue status endpoint
-app.get('/api/tasks', (req, res) => {
-    const tasks = Array.from(taskRegistry.entries()).map(([id, data]) => ({
-        task_id: id,
-        status: data.status,
-        created_at: data.created_at,
-        completed_at: data.completed_at
-    }));
-    res.json({ success: true, tasks });
-});
-```
-
-**For production:**
-- Use Redis for task queue
-- Add worker processes for parallel processing
-- Implement priority queue for premium users
-
----
-
-## Technical Challenges - RESOLVED
+## Technical Challenges and Solutions
 
 ### 1. ✅ Service Account Setup: Configuring OSS with proper permissions
 **Solution:** RAM user with `oss:PutObject` and `oss:GetObject` permissions only.
@@ -242,14 +152,6 @@ app.get('/api/tasks', (req, res) => {
 - Exponential backoff (don't spam API)
 - Clear error messages with retry option
 
-### 5. ✅ Cost Management: Tracking API usage and implementing safeguards
-**Solution:**
-- Rate limiting: 10 requests/hour per IP
-- File size limits: 5MB image, 200MB video
-- Duration limits: 2-30 seconds
-- Usage tracking in task registry
-- Failed requests don't consume quota
-
 ---
 
 ## Additional Lessons Learned
@@ -264,11 +166,7 @@ app.get('/api/tasks', (req, res) => {
 ### ⚠️ Critical: Map API Response Fields Correctly
 **Problem:** WAN API returns `task_status`, frontend expected `status` → showed "undefined"
 
-**Solution:** Use fallback parsing:
-```javascript
-const status = data.status || data.task_status || 'UNKNOWN';
-```
-
+**Solution:** Use fallback parsing.
 ---
 
 ### ⚠️ Critical: Log Everything During Development
